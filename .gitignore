@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+mihomo
+mihomo.exe
+mihomo-*.gz
+mihomo-*.zip
+config.yaml
+test_*.yaml
+mihomo.log
+.tmp/
+mihomo.zip
