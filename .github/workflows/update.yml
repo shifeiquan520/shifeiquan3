@@ -19,7 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     env:
       MIHOMO_VERSION: v1.19.33
     steps:
@@ -49,7 +49,7 @@ jobs:
           ./mihomo -v
 
       - name: Build subscriptions
-        run: python node_finder/main.py --mihomo ./mihomo --max-test 1500 --top 150 --concurrency 60
+        run: python node_finder/main.py --mihomo ./mihomo --max-test 1500 --top 150 --concurrency 60 --speed-concurrency 8 --min-speed 300
 
       - name: Commit output
         run: |

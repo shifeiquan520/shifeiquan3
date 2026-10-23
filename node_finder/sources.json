@@ -1,26 +1,32 @@
 [
   {
     "name": "Barabama-merged",
-    "url": "https://raw.githubusercontent.com/Barabama/FreeNodes/feat/ai-crawler-v2/nodes/merged.txt"
+    "url": "https://raw.githubusercontent.com/Barabama/FreeNodes/feat/ai-crawler-v2/nodes/merged.txt",
+    "enabled": true
   },
   {
     "name": "awesome-vpn",
-    "url": "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all"
+    "url": "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all",
+    "enabled": true
   },
   {
     "name": "zhuhaiuk",
-    "url": "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt"
+    "url": "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt",
+    "enabled": true
   },
   {
     "name": "ovmvo",
-    "url": "https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/permanent/mihomo.yaml"
+    "url": "https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/permanent/mihomo.yaml",
+    "enabled": true
   },
   {
     "name": "ripaojiedian",
-    "url": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
+    "url": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+    "enabled": false
   },
   {
     "name": "boka233",
-    "url": "https://raw.githubusercontent.com/boka233/daily_free_vpn/main/merge-verify.txt"
+    "url": "https://raw.githubusercontent.com/boka233/daily_free_vpn/main/merge-verify.txt",
+    "enabled": false
   }
 ]

@@ -11,7 +11,7 @@ import os
 
 import yaml
 
-TEST_URL = 'http://cp.cloudflare.com/generate_204'
+TEST_URL = 'https://www.youtube.com/generate_204'
 
 CC_NAMES = {
     'HK': '香港', 'TW': '台湾', 'MO': '澳门', 'JP': '日本', 'SG': '新加坡',
@@ -69,15 +69,76 @@ def assign_names(nodes):
     return nodes
 
 
+def add_speed_suffix(nodes):
+    """节点名追加实测带宽，便于人工挑选"""
+    for node in nodes:
+        speed = int(node.get('speed_kbps') or 0)
+        if not speed:
+            continue
+        if speed >= 1024:
+            label = '%.1fM/s' % (speed / 1024.0)
+        else:
+            label = '%dK/s' % speed
+        node['name'] = '%s · %s' % (node['name'], label)
+        node['proxy']['name'] = node['name']
+    return nodes
+
+
+def limit_per_ip(nodes, max_per_ip=2):
+    """同一出口 IP 最多保留若干节点，避免全被共享服务器占满"""
+    seen = {}
+    kept = []
+    dropped = 0
+    for node in nodes:
+        ip = node.get('server_ip') or node['proxy'].get('server')
+        if seen.get(ip, 0) >= max_per_ip:
+            dropped += 1
+            continue
+        seen[ip] = seen.get(ip, 0) + 1
+        kept.append(node)
+    if dropped:
+        print('[select] 同 IP 超限剔除 %d 个' % dropped)
+    return kept
+
+
+def select_final(nodes, top, min_speed):
+    """按实测带宽筛选 + 排序 + 同 IP 限流"""
+    fast = [n for n in nodes if int(n.get('speed_kbps') or 0) >= min_speed]
+    if len(fast) < 10:
+        fast = [n for n in nodes if int(n.get('speed_kbps') or 0) > 0]
+        print('[select] 达标节点不足，回退到 速度>0 的 %d 个' % len(fast))
+    if not fast:
+        fast = [n for n in nodes if n.get('delay')]
+        print('[select] 无带宽数据，退回按延迟排序 %d 个' % len(fast))
+
+    fast.sort(key=lambda n: (-int(n.get('speed_kbps') or 0), n.get('delay') or 999999))
+    fast = limit_per_ip(fast, 2)
+    return fast[:top]
+
+
 def build_clash(nodes):
     names = [n['name'] for n in nodes]
     proxies = [n['proxy'] for n in nodes]
+
+    fast_names = [n['name'] for n in nodes if int(n.get('speed_kbps') or 0) >= 500]
+    video_names = [
+        n['name'] for n in nodes
+        if n['proxy'].get('type') in ('hysteria2', 'tuic')
+        or (n['proxy'].get('type') == 'vless' and n['proxy'].get('udp'))
+    ]
+    if not video_names:
+        video_names = names[:20]
+
+    head = ['♻️ 自动选择']
+    if fast_names:
+        head.append('⚡ 高速')
+    head.append('🎬 视频')
 
     groups = [
         {
             'name': '🚀 节点选择',
             'type': 'select',
-            'proxies': ['♻️ 自动选择'] + names,
+            'proxies': head + names,
         },
         {
             'name': '♻️ 自动选择',
@@ -88,6 +149,20 @@ def build_clash(nodes):
             'proxies': names,
         },
     ]
+    if fast_names:
+        groups.append({
+            'name': '⚡ 高速',
+            'type': 'url-test',
+            'url': TEST_URL,
+            'interval': 300,
+            'tolerance': 30,
+            'proxies': fast_names,
+        })
+    groups.append({
+        'name': '🎬 视频',
+        'type': 'select',
+        'proxies': video_names,
+    })
 
     counts = {}
     for node in nodes:
@@ -116,6 +191,20 @@ def build_clash(nodes):
         'log-level': 'info',
         'ipv6': False,
         'external-controller': '127.0.0.1:9090',
+        'find-process-mode': 'off',
+        'tcp-concurrent': True,
+        'unified-delay': True,
+        'global-client-fingerprint': 'chrome',
+        'dns': {
+            'enable': True,
+            'ipv6': False,
+            'enhanced-mode': 'fake-ip',
+            'fake-ip-range': '198.18.0.1/16',
+            'default-nameserver': ['223.5.5.5', '119.29.29.29'],
+            'nameserver': ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query'],
+            'fallback': ['https://1.1.1.1/dns-query', 'https://8.8.8.8/dns-query'],
+            'fallback-filter': {'geoip': False},
+        },
         'proxies': proxies,
         'proxy-groups': groups,
         'rules': ['MATCH,🚀 节点选择'],
@@ -156,6 +245,7 @@ def write_outputs(outdir, nodes):
             'server_ip': node.get('server_ip'),
             'country': node.get('country'),
             'delay_ms': node.get('delay'),
+            'speed_kbps': node.get('speed_kbps'),
             'source': node.get('source'),
             'has_raw_link': bool(node.get('raw')),
         })

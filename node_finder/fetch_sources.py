@@ -70,7 +70,7 @@ def fetch_all():
     for source in load_sources():
         name = source.get('name', 'unknown')
         url = source.get('url', '')
-        if not url:
+        if not url or not source.get('enabled', True):
             continue
         print('[fetch] %s ...' % name, end=' ', flush=True)
         text, used = fetch_text(url)

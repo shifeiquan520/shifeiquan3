@@ -15,7 +15,7 @@ import yaml
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from build import assign_names, write_outputs
+from build import add_speed_suffix, assign_names, select_final, write_outputs
 from dedupe import dedupe, sample_round_robin
 from fetch_sources import fetch_all
 from geo import annotate
@@ -30,8 +30,10 @@ def parse_args():
     parser.add_argument('--mihomo', default='', help='mihomo 可执行文件路径')
     parser.add_argument('--top', type=int, default=150, help='最终保留节点数')
     parser.add_argument('--max-test', type=int, default=800, help='参与测速的节点上限')
-    parser.add_argument('--concurrency', type=int, default=30, help='测速并发')
-    parser.add_argument('--timeout', type=int, default=5000, help='单个节点测速超时(ms)')
+    parser.add_argument('--concurrency', type=int, default=60, help='延迟测试并发')
+    parser.add_argument('--speed-concurrency', type=int, default=8, help='带宽测试并发')
+    parser.add_argument('--timeout', type=int, default=3000, help='单个节点延迟超时(ms)')
+    parser.add_argument('--min-speed', type=int, default=300, help='最低下载带宽(KB/s)')
     parser.add_argument('--no-test', action='store_true', help='跳过测速（仅调试流程）')
     parser.add_argument('--outdir', default=DEFAULT_OUTDIR, help='输出目录')
     return parser.parse_args()
@@ -127,28 +129,42 @@ def main():
     if args.no_test:
         print('[test] 已跳过（--no-test）')
         for node in nodes:
-            node['delay'] = 0
+            node['delay'] = 1
+            node['speed_kbps'] = 0
         tested = list(nodes)
     else:
         binary = find_mihomo(args.mihomo)
         if not binary or not os.path.exists(binary):
             print('[ERR] 未找到 mihomo 可执行文件，可加 --no-test 或指定 --mihomo')
             return 1
-        results = test_all(binary, nodes, timeout_ms=args.timeout, concurrency=args.concurrency)
+        results = test_all(
+            binary,
+            nodes,
+            timeout_ms=args.timeout,
+            concurrency=args.concurrency,
+            speed_concurrency=args.speed_concurrency,
+        )
         tested = []
         for node in nodes:
-            delay = results.get(node['name'])
-            node['delay'] = delay
-            if delay:
+            info = results.get(node['name']) or {}
+            node['delay'] = info.get('delay')
+            node['speed_kbps'] = int(info.get('speed_kbps') or 0)
+            if node['delay']:
                 tested.append(node)
-        print('[test] 存活 %d/%d' % (len(tested), len(nodes)))
+        reachable = len(tested)
+        qualified = sum(1 for n in tested if n['speed_kbps'] >= args.min_speed)
+        print('[test] YouTube 可达 %d/%d，达标(>=%dKB/s) %d'
+              % (reachable, len(nodes), args.min_speed, qualified))
 
     if not tested:
         print('[ERR] 无可用节点，保留上次输出')
         return 0
 
-    tested.sort(key=lambda x: x.get('delay') or 999999)
-    final = tested[:args.top]
+    final = select_final(tested, args.top, args.min_speed)
+    final = add_speed_suffix(final)
+    if not final:
+        print('[ERR] 筛选后无节点，保留上次输出')
+        return 0
 
     print('\n[6/6] 生成订阅')
     stats = write_outputs(args.outdir, final)
@@ -157,7 +173,10 @@ def main():
     for cc, count in summarize(final):
         print('  %-3s %d' % (cc, count))
 
-    print('\n延迟区间: %dms ~ %dms' % (final[0].get('delay') or 0, final[-1].get('delay') or 0))
+    delays = sorted(int(n.get('delay') or 0) for n in final)
+    speeds = sorted(int(n.get('speed_kbps') or 0) for n in final)
+    print('\n延迟区间: %dms ~ %dms' % (delays[0], delays[-1]))
+    print('带宽区间: %d ~ %d KB/s' % (speeds[0], speeds[-1]))
     print('耗时 %.1fs' % (time.time() - started))
     print('=' * 54)
     return 0
