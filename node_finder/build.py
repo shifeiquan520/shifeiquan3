@@ -221,7 +221,7 @@ def write_outputs(outdir, nodes):
     header = (
         '# free-nodes subscription (auto generated)\n'
         '# updated: %s\n'
-        '# nodes: %d (latency tested)\n'
+        '# nodes: %d (youtube reachable + real bandwidth tested)\n'
         '# usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash\n'
         '# note: public free nodes, do NOT use for sensitive accounts or payments\n\n'
     ) % (now, len(nodes))
