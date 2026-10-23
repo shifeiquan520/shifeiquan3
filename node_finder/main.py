@@ -39,10 +39,10 @@ def parse_args():
 
 def find_mihomo(explicit):
     if explicit:
-        return explicit
+        return os.path.abspath(explicit)
     env = os.environ.get('MIHOMO_BIN', '')
     if env and os.path.exists(env):
-        return env
+        return os.path.abspath(env)
     for name in ('mihomo', 'mihomo.exe'):
         path = os.path.join(HERE, '..', name)
         if os.path.exists(path):
