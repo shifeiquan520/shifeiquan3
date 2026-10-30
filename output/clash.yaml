@@ -1,6 +1,6 @@
 # free-nodes subscription (auto generated)
-# updated: 2026-10-29 18:23:27 UTC
-# nodes: 35 (youtube reachable + real bandwidth tested)
+# updated: 2026-10-30 00:47:28 UTC
+# nodes: 39 (youtube reachable + real bandwidth tested)
 # usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash
 # note: public free nodes, do NOT use for sensitive accounts or payments
 
@@ -31,27 +31,15 @@ dns:
   fallback-filter:
     geoip: false
 proxies:
-- type: ss
-  server: 138.199.42.68
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+- type: vless
+  server: us007.zestapp778.com
+  port: 18580
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
-  name: 🇺🇸US-17 · 3.1M/s
-- type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-  name: 🇺🇸US-16 · 2.7M/s
-- type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-  name: 🇺🇸US-12 · 2.6M/s
+  skip-cert-verify: true
+  tls: true
+  servername: us007.zestapp778.com
+  name: 🇺🇸US-14 · 3.7M/s
 - type: vless
   server: 195.123.235.183
   port: 443
@@ -65,21 +53,28 @@ proxies:
     short-id: a0e2a6074c6456b0
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇺🇸US-05 · 2.4M/s
+  name: 🇺🇸US-05 · 3.5M/s
 - type: ss
-  server: 37.19.198.243
+  server: 138.199.42.68
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+  name: 🇺🇸US-17 · 3.2M/s
+- type: ss
+  server: 156.146.38.167
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-  name: 🇺🇸US-13 · 2.2M/s
-- type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  name: 🇺🇸US-12 · 2.2M/s
+- type: ss
+  server: 173.244.56.6
   port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  skip-cert-verify: true
-  name: 🇺🇸US-11 · 2.0M/s
+  name: 🇺🇸US-07 · 1.7M/s
 - type: vless
   server: 195.123.240.65
   port: 443
@@ -93,35 +88,42 @@ proxies:
     short-id: 19296c9f1bf9c7b1
   flow: xtls-rprx-vision
   client-fingerprint: ios
-  name: 🇺🇸US-02 · 1.9M/s
-- type: vless
-  server: 15.204.97.209
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  name: 🇺🇸US-02 · 1.5M/s
+- type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
   udp: true
   skip-cert-verify: true
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  name: 🇺🇸US-06 · 1.8M/s
+  name: 🇺🇸US-11 · 1.5M/s
+- type: trojan
+  server: www.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: 242a3d8eee5e4ed1a6bfa4141d549a25
+  udp: true
+  skip-cert-verify: true
+  name: 🇺🇸US-10 · 1.5M/s
+- type: ss
+  server: 23.251.121.242
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+  name: 🇺🇸US-18 · 1.4M/s
 - type: ss
   server: 138.199.43.159
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-  name: 🇺🇸US-19 · 1.8M/s
-- type: hysteria2
-  server: hy2.123266.xyz
-  port: 33333
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  skip-cert-verify: false
-  sni: hy2.123266.xyz
-  name: 🇺🇸US-15 · 1.8M/s
+  name: 🇺🇸US-19 · 1.4M/s
+- type: ss
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: 🇬🇧GB-01 · 1.3M/s
 - type: vless
   server: ww13.levikogjgfdd.ir
   port: 23576
@@ -135,30 +137,9 @@ proxies:
     short-id: '01'
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇺🇸US-03 · 1.6M/s
-- type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-  name: 🇺🇸US-07 · 1.3M/s
-- type: ss
-  server: 23.251.121.242
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-  name: 🇺🇸US-18 · 1.2M/s
-- type: ss
-  server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: 🇬🇧GB-01 · 988K/s
+  name: 🇺🇸US-03 · 1.3M/s
 - type: vless
-  server: 51.158.206.80
+  server: 15.204.97.209
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
@@ -170,42 +151,7 @@ proxies:
     short-id: '01'
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇳🇱NL-02 · 906K/s
-- type: vless
-  server: 51.158.206.26
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  name: 🇳🇱NL-01 · 900K/s
-- type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  name: 🇳🇱NL-06 · 873K/s
-- type: vless
-  server: 51.158.206.87
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  name: 🇳🇱NL-05 · 840K/s
+  name: 🇺🇸US-06 · 1.3M/s
 - type: vless
   server: 62.210.91.10
   port: 23576
@@ -219,23 +165,171 @@ proxies:
     short-id: '01'
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇫🇷FR-01 · 830K/s
-- name: 🇮🇹IT-06 · 798K/s
-  server: 202.50.253.99
+  name: 🇫🇷FR-01 · 1.2M/s
+- type: hysteria2
+  server: hy2.123266.xyz
+  port: 33333
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  skip-cert-verify: false
+  sni: hy2.123266.xyz
+  name: 🇺🇸US-15 · 1.1M/s
+- type: ss
+  server: 82.38.31.170
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+  name: 🇳🇱NL-07 · 1.1M/s
+- type: vless
+  server: 51.158.206.26
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  name: 🇳🇱NL-01 · 1.1M/s
+- type: vless
+  server: 51.158.206.97
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  name: 🇳🇱NL-04 · 1.1M/s
+- type: vless
+  server: 51.158.206.98
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  name: 🇳🇱NL-03 · 1.1M/s
+- name: 🇮🇹IT-05 · 1.1M/s
+  server: 202.50.253.72
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: 🇮🇹IT-02 · 1.0M/s
+- type: vless
+  server: 51.158.206.80
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  name: 🇳🇱NL-02 · 1.0M/s
+- name: 🇮🇹IT-08 · 1.0M/s
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: 🇮🇹IT-01 · 1.0M/s
+- type: vless
+  server: 51.158.206.87
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  name: 🇳🇱NL-05 · 1.0M/s
+- type: ss
   server: 82.38.31.205
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  name: 🇳🇱NL-08 · 759K/s
+  name: 🇳🇱NL-08 · 1.0M/s
+- name: 🇮🇹IT-06 · 1.0M/s
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹IT-04 · 1.0M/s
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  server: 193.29.139.151
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+  name: 🇳🇱NL-06 · 1.0M/s
+- type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: 🇮🇹IT-03 · 987K/s
+- type: ss
+  skip-cert-verify: false
+  udp: false
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 🇮🇹IT-09 · 975K/s
+- type: ss
+  server: 82.38.31.186
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  name: 🇳🇱NL-09 · 954K/s
 - type: vless
-  name: 🇸🇪SE-01 · 747K/s
+  name: 🇸🇪SE-01 · 844K/s
   server: se-2.pythonsetupbib.online
   port: 61374
   uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
@@ -256,22 +350,22 @@ proxies:
       max-connections: '3'
   encryption: none
   servername: se-2.pythonsetupbib.online
-- type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- type: vless
+  server: 31.77.148.89
+  port: 45021
+  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
   udp: true
-  name: 🇮🇹IT-01 · 725K/s
+  skip-cert-verify: true
+  name: 🇩🇪DE-01 · 751K/s
 - type: ss
-  server: 82.38.31.186
-  port: 8080
+  server: 57.129.113.16
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: NcAXc0UZI6yQJE1p8QmOv8
   udp: true
-  name: 🇳🇱NL-09 · 715K/s
-- name: 🇮🇹IT-08 · 626K/s
-  server: 202.50.253.90
+  name: 🇩🇪DE-02 · 574K/s
+- name: 🇮🇹IT-07 · 477K/s
+  server: 202.50.253.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -281,7 +375,7 @@ proxies:
   password: 0a9f1f5a397bd427
   server: 125.227.86.45
   port: 443
-  name: 🇹🇼TW-01 · 603K/s
+  name: 🇹🇼TW-01 · 476K/s
   skip-cert-verify: true
   sni: TG.freecodes
   alpn:
@@ -289,98 +383,32 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇭🇰HK-03 · 514K/s
+- type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  name: 🇺🇸US-01 · 412K/s
+- name: 🇸🇬SG-03 · 402K/s
   type: vmess
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  server: wjofhsqteueywxeq.v.3dns.vip
   port: 443
   cipher: auto
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
   alterId: 0
   tls: true
   network: ws
   ws-opts:
     path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
-- type: ss
-  skip-cert-verify: false
-  udp: false
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 🇮🇹IT-09 · 504K/s
-- name: 🇭🇰HK-04 · 498K/s
-  type: vmess
-  server: 47.243.194.125
-  port: 443
-  cipher: auto
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇮🇹IT-07 · 445K/s
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  server: 82.38.31.170
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  name: 🇳🇱NL-07 · 426K/s
-- type: trojan
-  server: www.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: 242a3d8eee5e4ed1a6bfa4141d549a25
-  udp: true
-  skip-cert-verify: true
-  name: 🇺🇸US-10 · 384K/s
-- type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: 🇮🇹IT-03 · 376K/s
-- type: vless
-  server: 45.202.255.92
-  port: 9443
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: www.amazon.com
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  name: 🇯🇵JP-01 · 303K/s
-- type: vless
-  server: 51.158.206.98
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  name: 🇳🇱NL-03 · 303K/s
+    headers: {}
+  servername: wjofhsqteueywxeq.v.3dns.vip
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -388,184 +416,206 @@ proxy-groups:
   - ♻️ 自动选择
   - ⚡ 高速
   - 🎬 视频
-  - 🇺🇸US-17 · 3.1M/s
-  - 🇺🇸US-16 · 2.7M/s
-  - 🇺🇸US-12 · 2.6M/s
-  - 🇺🇸US-05 · 2.4M/s
-  - 🇺🇸US-13 · 2.2M/s
-  - 🇺🇸US-11 · 2.0M/s
-  - 🇺🇸US-02 · 1.9M/s
-  - 🇺🇸US-06 · 1.8M/s
-  - 🇺🇸US-19 · 1.8M/s
-  - 🇺🇸US-15 · 1.8M/s
-  - 🇺🇸US-03 · 1.6M/s
-  - 🇺🇸US-07 · 1.3M/s
-  - 🇺🇸US-18 · 1.2M/s
-  - 🇬🇧GB-01 · 988K/s
-  - 🇳🇱NL-02 · 906K/s
-  - 🇳🇱NL-01 · 900K/s
-  - 🇳🇱NL-06 · 873K/s
-  - 🇳🇱NL-05 · 840K/s
-  - 🇫🇷FR-01 · 830K/s
-  - 🇮🇹IT-06 · 798K/s
-  - 🇳🇱NL-08 · 759K/s
-  - 🇸🇪SE-01 · 747K/s
-  - 🇮🇹IT-01 · 725K/s
-  - 🇳🇱NL-09 · 715K/s
-  - 🇮🇹IT-08 · 626K/s
-  - 🇹🇼TW-01 · 603K/s
-  - 🇭🇰HK-03 · 514K/s
-  - 🇮🇹IT-09 · 504K/s
-  - 🇭🇰HK-04 · 498K/s
-  - 🇮🇹IT-07 · 445K/s
-  - 🇳🇱NL-07 · 426K/s
-  - 🇺🇸US-10 · 384K/s
-  - 🇮🇹IT-03 · 376K/s
-  - 🇯🇵JP-01 · 303K/s
-  - 🇳🇱NL-03 · 303K/s
+  - 🇺🇸US-14 · 3.7M/s
+  - 🇺🇸US-05 · 3.5M/s
+  - 🇺🇸US-17 · 3.2M/s
+  - 🇺🇸US-12 · 2.2M/s
+  - 🇺🇸US-07 · 1.7M/s
+  - 🇺🇸US-02 · 1.5M/s
+  - 🇺🇸US-11 · 1.5M/s
+  - 🇺🇸US-10 · 1.5M/s
+  - 🇺🇸US-18 · 1.4M/s
+  - 🇺🇸US-19 · 1.4M/s
+  - 🇬🇧GB-01 · 1.3M/s
+  - 🇺🇸US-03 · 1.3M/s
+  - 🇺🇸US-06 · 1.3M/s
+  - 🇫🇷FR-01 · 1.2M/s
+  - 🇺🇸US-15 · 1.1M/s
+  - 🇳🇱NL-07 · 1.1M/s
+  - 🇳🇱NL-01 · 1.1M/s
+  - 🇳🇱NL-04 · 1.1M/s
+  - 🇳🇱NL-03 · 1.1M/s
+  - 🇮🇹IT-05 · 1.1M/s
+  - 🇮🇹IT-02 · 1.0M/s
+  - 🇳🇱NL-02 · 1.0M/s
+  - 🇮🇹IT-08 · 1.0M/s
+  - 🇮🇹IT-01 · 1.0M/s
+  - 🇳🇱NL-05 · 1.0M/s
+  - 🇳🇱NL-08 · 1.0M/s
+  - 🇮🇹IT-06 · 1.0M/s
+  - 🇮🇹IT-04 · 1.0M/s
+  - 🇳🇱NL-06 · 1.0M/s
+  - 🇮🇹IT-03 · 987K/s
+  - 🇮🇹IT-09 · 975K/s
+  - 🇳🇱NL-09 · 954K/s
+  - 🇸🇪SE-01 · 844K/s
+  - 🇩🇪DE-01 · 751K/s
+  - 🇩🇪DE-02 · 574K/s
+  - 🇮🇹IT-07 · 477K/s
+  - 🇹🇼TW-01 · 476K/s
+  - 🇺🇸US-01 · 412K/s
+  - 🇸🇬SG-03 · 402K/s
 - name: ♻️ 自动选择
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-17 · 3.1M/s
-  - 🇺🇸US-16 · 2.7M/s
-  - 🇺🇸US-12 · 2.6M/s
-  - 🇺🇸US-05 · 2.4M/s
-  - 🇺🇸US-13 · 2.2M/s
-  - 🇺🇸US-11 · 2.0M/s
-  - 🇺🇸US-02 · 1.9M/s
-  - 🇺🇸US-06 · 1.8M/s
-  - 🇺🇸US-19 · 1.8M/s
-  - 🇺🇸US-15 · 1.8M/s
-  - 🇺🇸US-03 · 1.6M/s
-  - 🇺🇸US-07 · 1.3M/s
-  - 🇺🇸US-18 · 1.2M/s
-  - 🇬🇧GB-01 · 988K/s
-  - 🇳🇱NL-02 · 906K/s
-  - 🇳🇱NL-01 · 900K/s
-  - 🇳🇱NL-06 · 873K/s
-  - 🇳🇱NL-05 · 840K/s
-  - 🇫🇷FR-01 · 830K/s
-  - 🇮🇹IT-06 · 798K/s
-  - 🇳🇱NL-08 · 759K/s
-  - 🇸🇪SE-01 · 747K/s
-  - 🇮🇹IT-01 · 725K/s
-  - 🇳🇱NL-09 · 715K/s
-  - 🇮🇹IT-08 · 626K/s
-  - 🇹🇼TW-01 · 603K/s
-  - 🇭🇰HK-03 · 514K/s
-  - 🇮🇹IT-09 · 504K/s
-  - 🇭🇰HK-04 · 498K/s
-  - 🇮🇹IT-07 · 445K/s
-  - 🇳🇱NL-07 · 426K/s
-  - 🇺🇸US-10 · 384K/s
-  - 🇮🇹IT-03 · 376K/s
-  - 🇯🇵JP-01 · 303K/s
-  - 🇳🇱NL-03 · 303K/s
+  - 🇺🇸US-14 · 3.7M/s
+  - 🇺🇸US-05 · 3.5M/s
+  - 🇺🇸US-17 · 3.2M/s
+  - 🇺🇸US-12 · 2.2M/s
+  - 🇺🇸US-07 · 1.7M/s
+  - 🇺🇸US-02 · 1.5M/s
+  - 🇺🇸US-11 · 1.5M/s
+  - 🇺🇸US-10 · 1.5M/s
+  - 🇺🇸US-18 · 1.4M/s
+  - 🇺🇸US-19 · 1.4M/s
+  - 🇬🇧GB-01 · 1.3M/s
+  - 🇺🇸US-03 · 1.3M/s
+  - 🇺🇸US-06 · 1.3M/s
+  - 🇫🇷FR-01 · 1.2M/s
+  - 🇺🇸US-15 · 1.1M/s
+  - 🇳🇱NL-07 · 1.1M/s
+  - 🇳🇱NL-01 · 1.1M/s
+  - 🇳🇱NL-04 · 1.1M/s
+  - 🇳🇱NL-03 · 1.1M/s
+  - 🇮🇹IT-05 · 1.1M/s
+  - 🇮🇹IT-02 · 1.0M/s
+  - 🇳🇱NL-02 · 1.0M/s
+  - 🇮🇹IT-08 · 1.0M/s
+  - 🇮🇹IT-01 · 1.0M/s
+  - 🇳🇱NL-05 · 1.0M/s
+  - 🇳🇱NL-08 · 1.0M/s
+  - 🇮🇹IT-06 · 1.0M/s
+  - 🇮🇹IT-04 · 1.0M/s
+  - 🇳🇱NL-06 · 1.0M/s
+  - 🇮🇹IT-03 · 987K/s
+  - 🇮🇹IT-09 · 975K/s
+  - 🇳🇱NL-09 · 954K/s
+  - 🇸🇪SE-01 · 844K/s
+  - 🇩🇪DE-01 · 751K/s
+  - 🇩🇪DE-02 · 574K/s
+  - 🇮🇹IT-07 · 477K/s
+  - 🇹🇼TW-01 · 476K/s
+  - 🇺🇸US-01 · 412K/s
+  - 🇸🇬SG-03 · 402K/s
 - name: ⚡ 高速
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 30
   proxies:
-  - 🇺🇸US-17 · 3.1M/s
-  - 🇺🇸US-16 · 2.7M/s
-  - 🇺🇸US-12 · 2.6M/s
-  - 🇺🇸US-05 · 2.4M/s
-  - 🇺🇸US-13 · 2.2M/s
-  - 🇺🇸US-11 · 2.0M/s
-  - 🇺🇸US-02 · 1.9M/s
-  - 🇺🇸US-06 · 1.8M/s
-  - 🇺🇸US-19 · 1.8M/s
-  - 🇺🇸US-15 · 1.8M/s
-  - 🇺🇸US-03 · 1.6M/s
-  - 🇺🇸US-07 · 1.3M/s
-  - 🇺🇸US-18 · 1.2M/s
-  - 🇬🇧GB-01 · 988K/s
-  - 🇳🇱NL-02 · 906K/s
-  - 🇳🇱NL-01 · 900K/s
-  - 🇳🇱NL-06 · 873K/s
-  - 🇳🇱NL-05 · 840K/s
-  - 🇫🇷FR-01 · 830K/s
-  - 🇮🇹IT-06 · 798K/s
-  - 🇳🇱NL-08 · 759K/s
-  - 🇸🇪SE-01 · 747K/s
-  - 🇮🇹IT-01 · 725K/s
-  - 🇳🇱NL-09 · 715K/s
-  - 🇮🇹IT-08 · 626K/s
-  - 🇹🇼TW-01 · 603K/s
-  - 🇭🇰HK-03 · 514K/s
-  - 🇮🇹IT-09 · 504K/s
+  - 🇺🇸US-14 · 3.7M/s
+  - 🇺🇸US-05 · 3.5M/s
+  - 🇺🇸US-17 · 3.2M/s
+  - 🇺🇸US-12 · 2.2M/s
+  - 🇺🇸US-07 · 1.7M/s
+  - 🇺🇸US-02 · 1.5M/s
+  - 🇺🇸US-11 · 1.5M/s
+  - 🇺🇸US-10 · 1.5M/s
+  - 🇺🇸US-18 · 1.4M/s
+  - 🇺🇸US-19 · 1.4M/s
+  - 🇬🇧GB-01 · 1.3M/s
+  - 🇺🇸US-03 · 1.3M/s
+  - 🇺🇸US-06 · 1.3M/s
+  - 🇫🇷FR-01 · 1.2M/s
+  - 🇺🇸US-15 · 1.1M/s
+  - 🇳🇱NL-07 · 1.1M/s
+  - 🇳🇱NL-01 · 1.1M/s
+  - 🇳🇱NL-04 · 1.1M/s
+  - 🇳🇱NL-03 · 1.1M/s
+  - 🇮🇹IT-05 · 1.1M/s
+  - 🇮🇹IT-02 · 1.0M/s
+  - 🇳🇱NL-02 · 1.0M/s
+  - 🇮🇹IT-08 · 1.0M/s
+  - 🇮🇹IT-01 · 1.0M/s
+  - 🇳🇱NL-05 · 1.0M/s
+  - 🇳🇱NL-08 · 1.0M/s
+  - 🇮🇹IT-06 · 1.0M/s
+  - 🇮🇹IT-04 · 1.0M/s
+  - 🇳🇱NL-06 · 1.0M/s
+  - 🇮🇹IT-03 · 987K/s
+  - 🇮🇹IT-09 · 975K/s
+  - 🇳🇱NL-09 · 954K/s
+  - 🇸🇪SE-01 · 844K/s
+  - 🇩🇪DE-01 · 751K/s
+  - 🇩🇪DE-02 · 574K/s
 - name: 🎬 视频
   type: select
   proxies:
-  - 🇺🇸US-05 · 2.4M/s
-  - 🇺🇸US-02 · 1.9M/s
-  - 🇺🇸US-06 · 1.8M/s
-  - 🇺🇸US-15 · 1.8M/s
-  - 🇺🇸US-03 · 1.6M/s
-  - 🇳🇱NL-02 · 906K/s
-  - 🇳🇱NL-01 · 900K/s
-  - 🇳🇱NL-05 · 840K/s
-  - 🇫🇷FR-01 · 830K/s
-  - 🇸🇪SE-01 · 747K/s
-  - 🇯🇵JP-01 · 303K/s
-  - 🇳🇱NL-03 · 303K/s
+  - 🇺🇸US-14 · 3.7M/s
+  - 🇺🇸US-05 · 3.5M/s
+  - 🇺🇸US-02 · 1.5M/s
+  - 🇺🇸US-03 · 1.3M/s
+  - 🇺🇸US-06 · 1.3M/s
+  - 🇫🇷FR-01 · 1.2M/s
+  - 🇺🇸US-15 · 1.1M/s
+  - 🇳🇱NL-01 · 1.1M/s
+  - 🇳🇱NL-04 · 1.1M/s
+  - 🇳🇱NL-03 · 1.1M/s
+  - 🇳🇱NL-02 · 1.0M/s
+  - 🇳🇱NL-05 · 1.0M/s
+  - 🇸🇪SE-01 · 844K/s
+  - 🇩🇪DE-01 · 751K/s
+  - 🇺🇸US-01 · 412K/s
 - name: 🇺🇸 美国
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-17 · 3.1M/s
-  - 🇺🇸US-16 · 2.7M/s
-  - 🇺🇸US-12 · 2.6M/s
-  - 🇺🇸US-05 · 2.4M/s
-  - 🇺🇸US-13 · 2.2M/s
-  - 🇺🇸US-11 · 2.0M/s
-  - 🇺🇸US-02 · 1.9M/s
-  - 🇺🇸US-06 · 1.8M/s
-  - 🇺🇸US-19 · 1.8M/s
-  - 🇺🇸US-15 · 1.8M/s
-  - 🇺🇸US-03 · 1.6M/s
-  - 🇺🇸US-07 · 1.3M/s
-  - 🇺🇸US-18 · 1.2M/s
-  - 🇺🇸US-10 · 384K/s
+  - 🇺🇸US-14 · 3.7M/s
+  - 🇺🇸US-05 · 3.5M/s
+  - 🇺🇸US-17 · 3.2M/s
+  - 🇺🇸US-12 · 2.2M/s
+  - 🇺🇸US-07 · 1.7M/s
+  - 🇺🇸US-02 · 1.5M/s
+  - 🇺🇸US-11 · 1.5M/s
+  - 🇺🇸US-10 · 1.5M/s
+  - 🇺🇸US-18 · 1.4M/s
+  - 🇺🇸US-19 · 1.4M/s
+  - 🇺🇸US-03 · 1.3M/s
+  - 🇺🇸US-06 · 1.3M/s
+  - 🇺🇸US-15 · 1.1M/s
+  - 🇺🇸US-01 · 412K/s
 - name: 🇳🇱 荷兰
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇳🇱NL-02 · 906K/s
-  - 🇳🇱NL-01 · 900K/s
-  - 🇳🇱NL-06 · 873K/s
-  - 🇳🇱NL-05 · 840K/s
-  - 🇳🇱NL-08 · 759K/s
-  - 🇳🇱NL-09 · 715K/s
-  - 🇳🇱NL-07 · 426K/s
-  - 🇳🇱NL-03 · 303K/s
+  - 🇳🇱NL-07 · 1.1M/s
+  - 🇳🇱NL-01 · 1.1M/s
+  - 🇳🇱NL-04 · 1.1M/s
+  - 🇳🇱NL-03 · 1.1M/s
+  - 🇳🇱NL-02 · 1.0M/s
+  - 🇳🇱NL-05 · 1.0M/s
+  - 🇳🇱NL-08 · 1.0M/s
+  - 🇳🇱NL-06 · 1.0M/s
+  - 🇳🇱NL-09 · 954K/s
 - name: 🇮🇹 意大利
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇮🇹IT-06 · 798K/s
-  - 🇮🇹IT-01 · 725K/s
-  - 🇮🇹IT-08 · 626K/s
-  - 🇮🇹IT-09 · 504K/s
-  - 🇮🇹IT-07 · 445K/s
-  - 🇮🇹IT-03 · 376K/s
-- name: 🇭🇰 香港
+  - 🇮🇹IT-05 · 1.1M/s
+  - 🇮🇹IT-02 · 1.0M/s
+  - 🇮🇹IT-08 · 1.0M/s
+  - 🇮🇹IT-01 · 1.0M/s
+  - 🇮🇹IT-06 · 1.0M/s
+  - 🇮🇹IT-04 · 1.0M/s
+  - 🇮🇹IT-03 · 987K/s
+  - 🇮🇹IT-09 · 975K/s
+  - 🇮🇹IT-07 · 477K/s
+- name: 🇩🇪 德国
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇭🇰HK-03 · 514K/s
-  - 🇭🇰HK-04 · 498K/s
+  - 🇩🇪DE-01 · 751K/s
+  - 🇩🇪DE-02 · 574K/s
 rules:
 - MATCH,🚀 节点选择
