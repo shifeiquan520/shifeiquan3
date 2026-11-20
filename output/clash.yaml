@@ -1,4 +1,4 @@
-# free-nodes subscription (auto generated)
+﻿# free-nodes subscription (auto generated)
 # updated: 2026-11-20 01:47:27 UTC
 # nodes: 7 (youtube reachable + real bandwidth tested)
 # usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash
@@ -181,3 +181,4 @@ proxy-groups:
   - 🇩🇪DE-01 · 4.6M/s
 rules:
 - MATCH,🚀 节点选择
+
