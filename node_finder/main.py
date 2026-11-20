@@ -149,12 +149,16 @@ def main():
             info = results.get(node['name']) or {}
             node['delay'] = info.get('delay')
             node['speed_kbps'] = int(info.get('speed_kbps') or 0)
+            node['proto_score'] = int(info.get('proto_score') or 1)
             if node['delay']:
                 tested.append(node)
         reachable = len(tested)
         qualified = sum(1 for n in tested if n['speed_kbps'] >= args.min_speed)
-        print('[test] YouTube 可达 %d/%d，达标(>=%dKB/s) %d'
-              % (reachable, len(nodes), args.min_speed, qualified))
+        proto_dist = {}
+        for n in tested:
+            proto_dist[n['proto_score']] = proto_dist.get(n['proto_score'], 0) + 1
+        print('[test] YouTube 可达 %d/%d，达标(>=%dKB/s) %d，协议分布 %s'
+              % (reachable, len(nodes), args.min_speed, qualified, proto_dist))
 
     if not tested:
         print('[ERR] 无可用节点，保留上次输出')
@@ -175,8 +179,12 @@ def main():
 
     delays = sorted(int(n.get('delay') or 0) for n in final)
     speeds = sorted(int(n.get('speed_kbps') or 0) for n in final)
+    proto_counts = {}
+    for n in final:
+        proto_counts[n['proxy'].get('type', '?')] = proto_counts.get(n['proxy'].get('type', '?'), 0) + 1
     print('\n延迟区间: %dms ~ %dms' % (delays[0], delays[-1]))
     print('带宽区间: %d ~ %d KB/s' % (speeds[0], speeds[-1]))
+    print('协议分布: %s' % proto_counts)
     print('耗时 %.1fs' % (time.time() - started))
     print('=' * 54)
     return 0

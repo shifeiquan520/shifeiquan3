@@ -101,8 +101,29 @@ def limit_per_ip(nodes, max_per_ip=2):
     return kept
 
 
+def limit_per_subnet(nodes, max_per_24=1):
+    """同一 /24 网段最多保留若干节点，防止共享 IP 池挤占"""
+    seen = {}
+    kept = []
+    dropped = 0
+    for node in nodes:
+        ip = node.get('server_ip') or node['proxy'].get('server')
+        if '.' not in ip:
+            kept.append(node)
+            continue
+        prefix = '.'.join(ip.split('.')[:3])
+        if seen.get(prefix, 0) >= max_per_24:
+            dropped += 1
+            continue
+        seen[prefix] = seen.get(prefix, 0) + 1
+        kept.append(node)
+    if dropped:
+        print('[select] 同 /24 网段超限剔除 %d 个' % dropped)
+    return kept
+
+
 def select_final(nodes, top, min_speed):
-    """按实测带宽筛选 + 排序 + 同 IP 限流"""
+    """按实测带宽筛选 + 协议评分排序 + 同 IP 限流 + 同 /24 网段限流"""
     fast = [n for n in nodes if int(n.get('speed_kbps') or 0) >= min_speed]
     if len(fast) < 10:
         fast = [n for n in nodes if int(n.get('speed_kbps') or 0) > 0]
@@ -111,8 +132,14 @@ def select_final(nodes, top, min_speed):
         fast = [n for n in nodes if n.get('delay')]
         print('[select] 无带宽数据，退回按延迟排序 %d 个' % len(fast))
 
-    fast.sort(key=lambda n: (-int(n.get('speed_kbps') or 0), n.get('delay') or 999999))
+    # 排序：带宽降序 > 协议评分降序 > 延迟升序
+    fast.sort(key=lambda n: (
+        -int(n.get('speed_kbps') or 0),
+        -int(n.get('proto_score') or 1),
+        n.get('delay') or 999999
+    ))
     fast = limit_per_ip(fast, 2)
+    fast = limit_per_subnet(fast, 1)
     return fast[:top]
 
 

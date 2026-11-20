@@ -8,6 +8,7 @@ test_nodes.py - 两阶段真实测速
 """
 
 import os
+import random
 import socket
 import subprocess
 import tempfile
@@ -21,15 +22,26 @@ import yaml
 
 warnings.filterwarnings('ignore')
 
-LATENCY_URL = 'https://www.youtube.com/generate_204'
-SPEED_URLS = (
-    'https://speed.cloudflare.com/__down?bytes=1048576',
-    'https://speedtest.tele2.net/1MB.zip',
+# 阶段A：真实 YouTube 视频片段域名，触发真实 QoS 限速
+LATENCY_URLS = (
+    'https://manifest.googlevideo.com/api/manifest/hls_variant/playlist/DQoJZ29vZ2xldmlkZW8KC2dyb3VwLWlkOjE1',
+    'https://rr3---sn-5uaezn7s.googlevideo.com/videoplayback?expire=1700000000&ei=test&ip=0.0.0.0&id=test&itag=137&source=yt_live_broadcast&requiressl=yes&ratebypass=yes',
+    'https://yt3.ggpht.com/ytc/APkrFKb_test_thumbnail.jpg',
 )
-SPEED_BYTES = 1048576
-SPEED_SECONDS = 8
+
+# 阶段B：10MB / 15秒 / 并发4 —— 暴露共享节点"前快后慢"
+SPEED_URLS = (
+    'https://speed.cloudflare.com/__down?bytes=10485760',
+    'https://speedtest.tele2.net/10MB.zip',
+)
+SPEED_BYTES = 10485760
+SPEED_SECONDS = 15
 CHUNK_SIZE = 120
 SPEED_CHUNK_SIZE = 100
+
+# 协议评分：hy2/tuic=3, vless+udp=2, 其他=1
+PREFERRED_TYPES = ('hysteria2', 'tuic')
+ACCEPTABLE_TYPES = ('vless',)
 
 
 def local_session():
@@ -143,10 +155,10 @@ def latency_chunk(binary, proxies, timeout_ms, concurrency, tag):
             print('[test] 延迟阶段启动失败: %s' % tail_log(log_path)[:160])
             return {}
         with ThreadPoolExecutor(max_workers=concurrency) as pool:
-            futures = {
-                pool.submit(get_delay, ctrl_port, p['name'], timeout_ms, LATENCY_URL): p['name']
-                for p in proxies
-            }
+            futures = {}
+            for p in proxies:
+                url = random.choice(LATENCY_URLS)
+                futures[pool.submit(get_delay, ctrl_port, p['name'], timeout_ms, url)] = p['name']
             for future in as_completed(futures):
                 name = futures[future]
                 try:
@@ -260,8 +272,18 @@ def speed_chunk(binary, proxies, timeout_s, concurrency, tag):
     return results
 
 
+def protocol_score(proxy):
+    """协议评分：hy2/tuic=3, vless+udp=2, 其他=1"""
+    ptype = proxy.get('type', '')
+    if ptype in PREFERRED_TYPES:
+        return 3
+    if ptype in ACCEPTABLE_TYPES and proxy.get('udp'):
+        return 2
+    return 1
+
+
 def test_all(binary, nodes, timeout_ms=3000, concurrency=60, speed_concurrency=8):
-    """返回 {name: {'delay': int|None, 'speed_kbps': int}}"""
+    """返回 {name: {'delay': int|None, 'speed_kbps': int, 'proto_score': int}}"""
     proxies = [node['proxy'] for node in nodes if node.get('proxy', {}).get('name')]
     if not proxies:
         return {}
@@ -303,7 +325,14 @@ def test_all(binary, nodes, timeout_ms=3000, concurrency=60, speed_concurrency=8
         speeds.update(chunk_speeds)
         print('有速度 %d/%d' % (measured, len(chunk)))
 
+    # 建立 name -> proxy 映射以获取协议评分
+    proxy_map = {p['name']: p for p in proxies}
     results = {}
     for name, delay in delays.items():
-        results[name] = {'delay': delay, 'speed_kbps': int(speeds.get(name) or 0)}
+        proto_score = protocol_score(proxy_map.get(name, {}))
+        results[name] = {
+            'delay': delay,
+            'speed_kbps': int(speeds.get(name) or 0),
+            'proto_score': proto_score,
+        }
     return results
