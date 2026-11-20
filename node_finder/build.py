@@ -221,7 +221,6 @@ def build_clash(nodes):
         'find-process-mode': 'off',
         'tcp-concurrent': True,
         'unified-delay': True,
-        'global-client-fingerprint': 'chrome',
         'dns': {
             'enable': True,
             'ipv6': False,

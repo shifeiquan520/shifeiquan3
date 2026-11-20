@@ -235,12 +235,22 @@ def parse_ss(url):
     if not host:
         return None
 
+    # Validate password for 2022-blake3 ciphers (must be valid base64)
+    method = method.strip().lower()
+    password = password.strip()
+    if method.startswith('2022-blake3'):
+        try:
+            # 2022-blake3 requires base64-encoded key
+            base64.b64decode(password, validate=True)
+        except Exception:
+            return None
+
     p = {
         'type': 'ss',
         'server': host,
         'port': port,
-        'cipher': method.strip(),
-        'password': password.strip(),
+        'cipher': method,
+        'password': password,
         'udp': True,
     }
     if plugin:
