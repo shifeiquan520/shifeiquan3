@@ -134,7 +134,67 @@ def latency_chunk(binary, proxies, timeout_ms, concurrency, tag):
     if not proxies:
         return {}
 
-    workdir = tempfile.mkdtemp(prefix='mihomo_lat_%s_' % tag)
+    # 大批量时分批，避免单个 mihomo 实例配置过大导致解析失败
+    MAX_PROXIES_PER_CORE = 60
+    all_results = {}
+    
+    for sub_start in range(0, len(proxies), MAX_PROXIES_PER_CORE):
+        sub_proxies = proxies[sub_start:sub_start + MAX_PROXIES_PER_CORE]
+        sub_tag = '%s_%d' % (tag, sub_start)
+        
+        workdir = tempfile.mkdtemp(prefix='mihomo_lat_%s_' % sub_tag)
+        ctrl_port = free_port()
+        config = {
+            'mixed-port': free_port(),
+            'allow-lan': False,
+            'mode': 'rule',
+            'log-level': 'silent',
+            'ipv6': False,
+            'external-controller': '127.0.0.1:%d' % ctrl_port,
+            'proxies': sub_proxies,
+            'rules': ['MATCH,DIRECT'],
+        }
+        log_file = None
+        proc = None
+        results = {}
+        try:
+            proc, log_file, log_path = start_core(binary, config, workdir, 'lat')
+            if not wait_ready(ctrl_port, proc, 25):
+                print('[test] 延迟阶段启动失败(%s): %s' % (sub_tag, tail_log(log_path)[:160]))
+                # 单个代理逐个重试
+                for p in sub_proxies:
+                    single_result = test_single_proxy_latency(binary, p, timeout_ms)
+                    if single_result is not None:
+                        results[p['name']] = single_result
+            else:
+                with ThreadPoolExecutor(max_workers=concurrency) as pool:
+                    futures = {}
+                    for p in sub_proxies:
+                        url = random.choice(LATENCY_URLS)
+                        futures[pool.submit(get_delay, ctrl_port, p['name'], timeout_ms, url)] = p['name']
+                    for future in as_completed(futures):
+                        name = futures[future]
+                        try:
+                            results[name] = future.result()
+                        except Exception:
+                            results[name] = None
+        finally:
+            stop_process(proc)
+            if log_file:
+                try:
+                    log_file.close()
+                except Exception:
+                    pass
+        
+        all_results.update(results)
+        print('[test] A 子批 %s 完成 %d/%d' % (sub_tag, sum(1 for v in results.values() if v), len(sub_proxies)))
+
+    return all_results
+
+
+def test_single_proxy_latency(binary, proxy, timeout_ms):
+    """单代理延迟测试（兜底）"""
+    workdir = tempfile.mkdtemp(prefix='mihomo_single_')
     ctrl_port = free_port()
     config = {
         'mixed-port': free_port(),
@@ -143,28 +203,17 @@ def latency_chunk(binary, proxies, timeout_ms, concurrency, tag):
         'log-level': 'silent',
         'ipv6': False,
         'external-controller': '127.0.0.1:%d' % ctrl_port,
-        'proxies': proxies,
+        'proxies': [proxy],
         'rules': ['MATCH,DIRECT'],
     }
     log_file = None
     proc = None
-    results = {}
     try:
-        proc, log_file, log_path = start_core(binary, config, workdir, 'lat')
-        if not wait_ready(ctrl_port, proc, 25):
-            print('[test] 延迟阶段启动失败: %s' % tail_log(log_path)[:160])
-            return {}
-        with ThreadPoolExecutor(max_workers=concurrency) as pool:
-            futures = {}
-            for p in proxies:
-                url = random.choice(LATENCY_URLS)
-                futures[pool.submit(get_delay, ctrl_port, p['name'], timeout_ms, url)] = p['name']
-            for future in as_completed(futures):
-                name = futures[future]
-                try:
-                    results[name] = future.result()
-                except Exception:
-                    results[name] = None
+        proc, log_file, log_path = start_core(binary, config, workdir, 'single')
+        if not wait_ready(ctrl_port, proc, 20):
+            return None
+        url = random.choice(LATENCY_URLS)
+        return get_delay(ctrl_port, proxy['name'], timeout_ms, url)
     finally:
         stop_process(proc)
         if log_file:
@@ -172,8 +221,6 @@ def latency_chunk(binary, proxies, timeout_ms, concurrency, tag):
                 log_file.close()
             except Exception:
                 pass
-
-    return results
 
 
 def download_speed(port, timeout_s):
@@ -217,59 +264,70 @@ def speed_chunk(binary, proxies, timeout_s, concurrency, tag):
     if not proxies:
         return {}
 
-    workdir = tempfile.mkdtemp(prefix='mihomo_spd_%s_' % tag)
-    ctrl_port = free_port()
-    listeners = []
-    port_map = {}
-    for index, proxy in enumerate(proxies):
-        port = free_port()
-        port_map[proxy['name']] = port
-        listeners.append({
-            'name': 'ln%d' % index,
-            'type': 'http',
-            'port': port,
-            'proxy': proxy['name'],
-        })
+    # 带宽测试分批，每批最多 40 个
+    MAX_PROXIES_PER_CORE = 40
+    all_results = {}
+    
+    for sub_start in range(0, len(proxies), MAX_PROXIES_PER_CORE):
+        sub_proxies = proxies[sub_start:sub_start + MAX_PROXIES_PER_CORE]
+        sub_tag = '%s_%d' % (tag, sub_start)
+        
+        workdir = tempfile.mkdtemp(prefix='mihomo_spd_%s_' % sub_tag)
+        ctrl_port = free_port()
+        listeners = []
+        port_map = {}
+        for index, proxy in enumerate(sub_proxies):
+            port = free_port()
+            port_map[proxy['name']] = port
+            listeners.append({
+                'name': 'ln%d' % index,
+                'type': 'http',
+                'port': port,
+                'proxy': proxy['name'],
+            })
 
-    config = {
-        'mixed-port': free_port(),
-        'allow-lan': False,
-        'mode': 'rule',
-        'log-level': 'silent',
-        'ipv6': False,
-        'external-controller': '127.0.0.1:%d' % ctrl_port,
-        'proxies': proxies,
-        'listeners': listeners,
-        'rules': ['MATCH,DIRECT'],
-    }
-    log_file = None
-    proc = None
-    results = {}
-    try:
-        proc, log_file, log_path = start_core(binary, config, workdir, 'spd')
-        if not wait_ready(ctrl_port, proc, 25):
-            print('[test] 带宽阶段启动失败(降级为只测延迟): %s' % tail_log(log_path)[:160])
-            return {}
-        with ThreadPoolExecutor(max_workers=concurrency) as pool:
-            futures = {
-                pool.submit(download_speed, port_map[p['name']], timeout_s): p['name']
-                for p in proxies
-            }
-            for future in as_completed(futures):
-                name = futures[future]
+        config = {
+            'mixed-port': free_port(),
+            'allow-lan': False,
+            'mode': 'rule',
+            'log-level': 'silent',
+            'ipv6': False,
+            'external-controller': '127.0.0.1:%d' % ctrl_port,
+            'proxies': sub_proxies,
+            'listeners': listeners,
+            'rules': ['MATCH,DIRECT'],
+        }
+        log_file = None
+        proc = None
+        results = {}
+        try:
+            proc, log_file, log_path = start_core(binary, config, workdir, 'spd')
+            if not wait_ready(ctrl_port, proc, 25):
+                print('[test] 带宽阶段启动失败(%s): %s' % (sub_tag, tail_log(log_path)[:160]))
+            else:
+                with ThreadPoolExecutor(max_workers=concurrency) as pool:
+                    futures = {
+                        pool.submit(download_speed, port_map[p['name']], timeout_s): p['name']
+                        for p in sub_proxies
+                    }
+                    for future in as_completed(futures):
+                        name = futures[future]
+                        try:
+                            results[name] = future.result()
+                        except Exception:
+                            results[name] = 0
+        finally:
+            stop_process(proc)
+            if log_file:
                 try:
-                    results[name] = future.result()
+                    log_file.close()
                 except Exception:
-                    results[name] = 0
-    finally:
-        stop_process(proc)
-        if log_file:
-            try:
-                log_file.close()
-            except Exception:
-                pass
+                    pass
+        
+        all_results.update(results)
+        print('[test] B 子批 %s 完成 %d/%d' % (sub_tag, sum(1 for v in results.values() if v), len(sub_proxies)))
 
-    return results
+    return all_results
 
 
 def protocol_score(proxy):
