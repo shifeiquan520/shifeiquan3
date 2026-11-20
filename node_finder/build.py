@@ -273,6 +273,7 @@ def write_outputs(outdir, nodes):
             'country': node.get('country'),
             'delay_ms': node.get('delay'),
             'speed_kbps': node.get('speed_kbps'),
+            'proto_score': node.get('proto_score'),
             'source': node.get('source'),
             'has_raw_link': bool(node.get('raw')),
         })
