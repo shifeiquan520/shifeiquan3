@@ -38,5 +38,15 @@
     "name": "boka233",
     "url": "https://raw.githubusercontent.com/boka233/daily_free_vpn/main/merge-verify.txt",
     "enabled": true
+  },
+  {
+    "name": "aiboboxx-v2rayfree",
+    "url": "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v20261123",
+    "enabled": true
+  },
+  {
+    "name": "aiboboxx-sub",
+    "url": "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/sub",
+    "enabled": true
   }
 ]
