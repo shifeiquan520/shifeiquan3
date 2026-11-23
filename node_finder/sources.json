@@ -33,5 +33,15 @@
     "name": "efxtv",
     "url": "https://raw.githubusercontent.com/efxtv/free-nodes/main/nodes.txt",
     "enabled": true
+  },
+  {
+    "name": "licheng527",
+    "url": "https://raw.githubusercontent.com/licheng527/Free-servers/main/nodes.txt",
+    "enabled": true
+  },
+  {
+    "name": "boka233",
+    "url": "https://raw.githubusercontent.com/boka233/daily_free_vpn/main/merge-verify.txt",
+    "enabled": true
   }
 ]
