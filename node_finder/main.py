@@ -28,7 +28,7 @@ DEFAULT_OUTDIR = os.path.join(HERE, '..', 'output')
 def parse_args():
     parser = argparse.ArgumentParser(description='free-nodes subscription builder')
     parser.add_argument('--mihomo', default='', help='mihomo 可执行文件路径')
-    parser.add_argument('--top', type=int, default=150, help='最终保留节点数')
+    parser.add_argument('--top', type=int, default=100, help='最终保留节点数')
     parser.add_argument('--max-test', type=int, default=800, help='参与测速的节点上限')
     parser.add_argument('--concurrency', type=int, default=60, help='延迟测试并发')
     parser.add_argument('--speed-concurrency', type=int, default=8, help='带宽测试并发')

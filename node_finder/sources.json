@@ -5,6 +5,16 @@
     "enabled": true
   },
   {
+    "name": "Barabama-clashnode",
+    "url": "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashnode.txt",
+    "enabled": true
+  },
+  {
+    "name": "Barabama-freeclashnode",
+    "url": "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/freeclashnode.txt",
+    "enabled": true
+  },
+  {
     "name": "awesome-vpn",
     "url": "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all",
     "enabled": true
@@ -20,13 +30,8 @@
     "enabled": true
   },
   {
-    "name": "ripaojiedian",
-    "url": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
-    "enabled": false
-  },
-  {
-    "name": "boka233",
-    "url": "https://raw.githubusercontent.com/boka233/daily_free_vpn/main/merge-verify.txt",
-    "enabled": false
+    "name": "efxtv",
+    "url": "https://raw.githubusercontent.com/efxtv/free-nodes/main/nodes.txt",
+    "enabled": true
   }
 ]
