@@ -32,12 +32,7 @@
   {
     "name": "efxtv",
     "url": "https://raw.githubusercontent.com/efxtv/free-nodes/main/nodes.txt",
-    "enabled": true
-  },
-  {
-    "name": "licheng527",
-    "url": "https://raw.githubusercontent.com/licheng527/Free-servers/main/nodes.txt",
-    "enabled": true
+    "enabled": false
   },
   {
     "name": "boka233",
