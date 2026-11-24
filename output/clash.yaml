@@ -1,5 +1,5 @@
 # free-nodes subscription (auto generated)
-# updated: 2026-11-24 03:28:25 UTC
+# updated: 2026-11-24 03:34:19 UTC
 # nodes: 200 (youtube reachable + real bandwidth tested)
 # usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash
 # note: public free nodes, do NOT use for sensitive accounts or payments
@@ -937,19 +937,6 @@ proxies:
   skip-cert-verify: true
   name: 🇺🇸US-31
 - type: vless
-  server: icook.tw
-  port: 8080
-  uuid: f8f5d3a5-54bd-4f52-9759-137bdbf950db
-  udp: true
-  skip-cert-verify: true
-  servername: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
-  name: 🇨🇦CA-14
-- type: vless
   server: 104.27.109.16
   port: 443
   uuid: 67ab86b7-69fb-41bf-8967-290cbd08f0ac
@@ -1175,23 +1162,6 @@ proxies:
       Host: levikoconfig.levikogjgfdd.ir
   client-fingerprint: chrome
   name: 🇨🇦CA-22
-- type: vless
-  server: courses.mftplus.qzz.io
-  port: 443
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: courses.mftplus.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-    headers:
-      Host: courses.mftplus.qzz.io
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  name: 🇨🇦CA-23
 - type: vmess
   server: 168.138.43.75
   port: 80
@@ -1422,6 +1392,19 @@ proxies:
   password: 29irqk0paakcx19v
   udp: true
   name: 🇫🇷FR-05
+- type: vless
+  server: 172.66.158.115
+  port: 8080
+  uuid: f8f5d3a5-54bd-4f52-9759-137bdbf950db
+  udp: true
+  skip-cert-verify: true
+  servername: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
+  name: 🇨🇦CA-27
 - type: ss
   server: 168.138.205.100
   port: 53758
@@ -2241,6 +2224,20 @@ proxies:
   alpn:
   - h2
   name: 🇺🇸US-57
+- type: vless
+  server: 108.162.194.135
+  port: 443
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: nbhhh.mrcool.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nbhhh.mrcool.kdns.fr
+  name: 🇨🇦CA-69
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -2327,7 +2324,6 @@ proxy-groups:
   - 🇳🇱NL-07
   - 🇺🇸US-30
   - 🇺🇸US-31
-  - 🇨🇦CA-14
   - 🇨🇦CA-15
   - 🇳🇱NL-08
   - 🇨🇦CA-16
@@ -2346,7 +2342,6 @@ proxy-groups:
   - 🇨🇦CA-21
   - 🇮🇳IN-01
   - 🇨🇦CA-22
-  - 🇨🇦CA-23
   - 🇯🇵JP-04
   - 🇺🇸US-35
   - 🇰🇷KR-01
@@ -2373,6 +2368,7 @@ proxy-groups:
   - 🇸🇬SG-08
   - 🇺🇸US-42
   - 🇫🇷FR-05
+  - 🇨🇦CA-27
   - 🇯🇵JP-05
   - 🇱🇻LV-05
   - 🇩🇪DE-07
@@ -2447,6 +2443,7 @@ proxy-groups:
   - 🇨🇦CA-67
   - 🇳🇱NL-44
   - 🇺🇸US-57
+  - 🇨🇦CA-69
 - name: ♻️ 自动选择
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -2533,7 +2530,6 @@ proxy-groups:
   - 🇳🇱NL-07
   - 🇺🇸US-30
   - 🇺🇸US-31
-  - 🇨🇦CA-14
   - 🇨🇦CA-15
   - 🇳🇱NL-08
   - 🇨🇦CA-16
@@ -2552,7 +2548,6 @@ proxy-groups:
   - 🇨🇦CA-21
   - 🇮🇳IN-01
   - 🇨🇦CA-22
-  - 🇨🇦CA-23
   - 🇯🇵JP-04
   - 🇺🇸US-35
   - 🇰🇷KR-01
@@ -2579,6 +2574,7 @@ proxy-groups:
   - 🇸🇬SG-08
   - 🇺🇸US-42
   - 🇫🇷FR-05
+  - 🇨🇦CA-27
   - 🇯🇵JP-05
   - 🇱🇻LV-05
   - 🇩🇪DE-07
@@ -2653,6 +2649,7 @@ proxy-groups:
   - 🇨🇦CA-67
   - 🇳🇱NL-44
   - 🇺🇸US-57
+  - 🇨🇦CA-69
 - name: 🎬 视频
   type: select
   proxies:
@@ -2695,7 +2692,6 @@ proxy-groups:
   - 🇨🇦CA-10
   - 🇨🇦CA-11
   - 🇬🇧GB-03
-  - 🇨🇦CA-14
   - 🇨🇦CA-15
   - 🇳🇱NL-08
   - 🇨🇦CA-16
@@ -2708,7 +2704,6 @@ proxy-groups:
   - 🇨🇦CA-21
   - 🇮🇳IN-01
   - 🇨🇦CA-22
-  - 🇨🇦CA-23
   - 🇰🇷KR-01
   - 🇰🇿KZ-01
   - 🇩🇪DE-04
@@ -2718,6 +2713,7 @@ proxy-groups:
   - 🇩🇪DE-06
   - 🇮🇷IR-02
   - 🇺🇸US-42
+  - 🇨🇦CA-27
   - 🇱🇻LV-05
   - 🇩🇪DE-07
   - 🇳🇱NL-28
@@ -2759,6 +2755,7 @@ proxy-groups:
   - 🇨🇦CA-62
   - 🇳🇱NL-44
   - 🇺🇸US-57
+  - 🇨🇦CA-69
 - name: 🇨🇦 加拿大
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -2777,7 +2774,6 @@ proxy-groups:
   - 🇨🇦CA-10
   - 🇨🇦CA-11
   - 🇨🇦CA-13
-  - 🇨🇦CA-14
   - 🇨🇦CA-15
   - 🇨🇦CA-16
   - 🇨🇦CA-17
@@ -2785,10 +2781,10 @@ proxy-groups:
   - 🇨🇦CA-19
   - 🇨🇦CA-21
   - 🇨🇦CA-22
-  - 🇨🇦CA-23
   - 🇨🇦CA-24
   - 🇨🇦CA-25
   - 🇨🇦CA-26
+  - 🇨🇦CA-27
   - 🇨🇦CA-30
   - 🇨🇦CA-31
   - 🇨🇦CA-32
@@ -2815,6 +2811,7 @@ proxy-groups:
   - 🇨🇦CA-62
   - 🇨🇦CA-63
   - 🇨🇦CA-67
+  - 🇨🇦CA-69
 - name: 🇺🇸 美国
   type: url-test
   url: https://www.youtube.com/generate_204
