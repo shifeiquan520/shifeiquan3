@@ -53,7 +53,7 @@ jobs:
           ./mihomo -v
 
       - name: Build subscriptions
-        run: python node_finder/main.py --mihomo ./mihomo --max-test 800 --top 100 --concurrency 60 --speed-concurrency 8 --min-speed 300
+        run: python node_finder/main.py --mihomo ./mihomo --no-test --max-test 2000 --top 200
 
       - name: Commit output
         run: |
