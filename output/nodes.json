@@ -53,28 +53,15 @@
   },
   {
     "name": "🇺🇸US-01",
-    "type": "hysteria2",
-    "server": "193.233.130.66",
+    "type": "vless",
+    "server": "172.233.129.172",
     "port": 443,
-    "server_ip": "193.233.130.66",
+    "server_ip": "172.233.129.172",
     "country": "US",
     "delay_ms": 1,
     "speed_kbps": 0,
     "proto_score": null,
     "source": "awesome-vpn",
-    "has_raw_link": true
-  },
-  {
-    "name": "🇹🇼TW-01",
-    "type": "vless",
-    "server": "bjah4kfb6edcnoyd.f2db7a60.e.yuetong.online",
-    "port": 443,
-    "server_ip": "36.232.64.17",
-    "country": "TW",
-    "delay_ms": 1,
-    "speed_kbps": 0,
-    "proto_score": null,
-    "source": "zhuhaiuk",
     "has_raw_link": true
   },
   {
@@ -121,7 +108,7 @@
     "type": "vmess",
     "server": "www.shopify.com",
     "port": 443,
-    "server_ip": "104.18.42.163",
+    "server_ip": "172.64.145.93",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -153,32 +140,6 @@
     "speed_kbps": 0,
     "proto_score": null,
     "source": "Barabama-freeclashnode",
-    "has_raw_link": true
-  },
-  {
-    "name": "🇺🇸US-03",
-    "type": "hysteria2",
-    "server": "154.40.49.216",
-    "port": 40055,
-    "server_ip": "154.40.49.216",
-    "country": "US",
-    "delay_ms": 1,
-    "speed_kbps": 0,
-    "proto_score": null,
-    "source": "awesome-vpn",
-    "has_raw_link": true
-  },
-  {
-    "name": "🇷🇺RU-01",
-    "type": "vless",
-    "server": "201.51.12.98",
-    "port": 443,
-    "server_ip": "201.51.12.98",
-    "country": "RU",
-    "delay_ms": 1,
-    "speed_kbps": 0,
-    "proto_score": null,
-    "source": "zhuhaiuk",
     "has_raw_link": true
   },
   {
@@ -247,12 +208,12 @@
     "has_raw_link": true
   },
   {
-    "name": "🇮🇪IE-01",
+    "name": "🇬🇧GB-02",
     "type": "ss",
-    "server": "20.234.98.208",
+    "server": "141.98.101.182",
     "port": 443,
-    "server_ip": "20.234.98.208",
-    "country": "IE",
+    "server_ip": "141.98.101.182",
+    "country": "GB",
     "delay_ms": 1,
     "speed_kbps": 0,
     "proto_score": null,
@@ -299,7 +260,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-04",
+    "name": "🇺🇸US-03",
     "type": "ss",
     "server": "tinkered-pennies-puppies.freesocks.work",
     "port": 443,
@@ -312,7 +273,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-05",
+    "name": "🇺🇸US-04",
     "type": "ss",
     "server": "48.103.218.77",
     "port": 18443,
@@ -327,9 +288,9 @@
   {
     "name": "🇩🇪DE-04",
     "type": "ss",
-    "server": "8.209.119.13",
+    "server": "47.91.74.232",
     "port": 443,
-    "server_ip": "8.209.119.13",
+    "server_ip": "47.91.74.232",
     "country": "DE",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -364,7 +325,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-03",
+    "name": "🇷🇺RU-01",
     "type": "vless",
     "server": "cdn-ya.shamanapp.online",
     "port": 443,
@@ -377,7 +338,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇺🇸US-06",
+    "name": "🇺🇸US-05",
     "type": "vmess",
     "server": "188.114.99.137",
     "port": 443,
@@ -416,7 +377,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-07",
+    "name": "🇺🇸US-06",
     "type": "vless",
     "server": "38.180.204.189",
     "port": 443,
@@ -429,7 +390,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-04",
+    "name": "🇷🇺RU-02",
     "type": "vless",
     "server": "176.114.95.245",
     "port": 443,
@@ -455,7 +416,20 @@
     "has_raw_link": false
   },
   {
-    "name": "🇬🇧GB-02",
+    "name": "🇨🇦CA-04",
+    "type": "vmess",
+    "server": "104.18.42.163",
+    "port": 443,
+    "server_ip": "104.18.42.163",
+    "country": "CA",
+    "delay_ms": 1,
+    "speed_kbps": 0,
+    "proto_score": null,
+    "source": "Barabama-merged",
+    "has_raw_link": true
+  },
+  {
+    "name": "🇬🇧GB-03",
     "type": "vless",
     "server": "91.193.58.209",
     "port": 80,
@@ -468,7 +442,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-05",
+    "name": "🇷🇺RU-03",
     "type": "vless",
     "server": "136.234.9.19",
     "port": 443,
@@ -507,19 +481,6 @@
     "has_raw_link": false
   },
   {
-    "name": "🇨🇦CA-05",
-    "type": "vmess",
-    "server": "172.64.145.93",
-    "port": 443,
-    "server_ip": "172.64.145.93",
-    "country": "CA",
-    "delay_ms": 1,
-    "speed_kbps": 0,
-    "proto_score": null,
-    "source": "Barabama-merged",
-    "has_raw_link": true
-  },
-  {
     "name": "🇽🇽XX-07",
     "type": "vless",
     "server": "r5.pythonmakemigreat.wiki",
@@ -533,7 +494,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-08",
+    "name": "🇺🇸US-07",
     "type": "ss",
     "server": "154.38.176.7",
     "port": 80,
@@ -563,7 +524,7 @@
     "type": "vmess",
     "server": "afzuv.xiaoyan.io",
     "port": 16617,
-    "server_ip": "54.116.36.80",
+    "server_ip": "3.38.215.50",
     "country": "KR",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -611,7 +572,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇺🇸US-09",
+    "name": "🇺🇸US-08",
     "type": "vless",
     "server": "15.204.97.214",
     "port": 23576,
@@ -663,7 +624,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-06",
+    "name": "🇷🇺RU-04",
     "type": "vless",
     "server": "213.183.45.23",
     "port": 8454,
@@ -689,7 +650,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇺🇸US-10",
+    "name": "🇺🇸US-09",
     "type": "ss",
     "server": "38.22.17.129",
     "port": 19999,
@@ -702,7 +663,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-11",
+    "name": "🇺🇸US-10",
     "type": "vless",
     "server": "154.197.88.253",
     "port": 443,
@@ -728,7 +689,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-12",
+    "name": "🇺🇸US-11",
     "type": "vmess",
     "server": "157.173.206.47",
     "port": 57449,
@@ -767,7 +728,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-13",
+    "name": "🇺🇸US-12",
     "type": "ss",
     "server": "156.146.38.167",
     "port": 443,
@@ -780,7 +741,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-14",
+    "name": "🇺🇸US-13",
     "type": "vless",
     "server": "xray-b8ct4r2f-sahdon-hosaindoost.cloady.io",
     "port": 443,
@@ -793,7 +754,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-06",
+    "name": "🇬🇧GB-07",
     "type": "vless",
     "server": "144.31.213.229",
     "port": 443,
@@ -806,11 +767,11 @@
     "has_raw_link": false
   },
   {
-    "name": "🇺🇸US-15",
+    "name": "🇺🇸US-14",
     "type": "vless",
     "server": "ipfast.kingmna.com",
     "port": 443,
-    "server_ip": "146.75.59.186",
+    "server_ip": "199.232.249.131",
     "country": "US",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -819,7 +780,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-16",
+    "name": "🇺🇸US-15",
     "type": "vless",
     "server": "48.102.205.89",
     "port": 22444,
@@ -836,7 +797,7 @@
     "type": "vless",
     "server": "bbbnhju.un2026.indevs.in",
     "port": 443,
-    "server_ip": "172.67.174.67",
+    "server_ip": "104.21.31.5",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -845,7 +806,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-07",
+    "name": "🇷🇺RU-05",
     "type": "vless",
     "server": "r2.pythonmakemigreat.wiki",
     "port": 8443,
@@ -897,7 +858,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-17",
+    "name": "🇺🇸US-16",
     "type": "vless",
     "server": "40.160.14.104",
     "port": 8880,
@@ -910,7 +871,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-18",
+    "name": "🇺🇸US-17",
     "type": "trojan",
     "server": "146.75.57.120",
     "port": 443,
@@ -923,7 +884,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇺🇸US-19",
+    "name": "🇺🇸US-18",
     "type": "vmess",
     "server": "84.17.41.2",
     "port": 18000,
@@ -975,7 +936,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-11",
+    "name": "🇷🇺RU-09",
     "type": "vless",
     "server": "45.155.52.231",
     "port": 443,
@@ -988,7 +949,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-10",
+    "name": "🇬🇧GB-11",
     "type": "vless",
     "server": "195.206.235.74",
     "port": 443,
@@ -1001,7 +962,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-20",
+    "name": "🇺🇸US-19",
     "type": "ss",
     "server": "173.234.29.2",
     "port": 990,
@@ -1027,7 +988,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-21",
+    "name": "🇺🇸US-20",
     "type": "vless",
     "server": "169.40.42.231",
     "port": 443,
@@ -1040,7 +1001,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-22",
+    "name": "🇺🇸US-21",
     "type": "vless",
     "server": "154.193.55.183",
     "port": 443,
@@ -1066,7 +1027,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-23",
+    "name": "🇺🇸US-22",
     "type": "vless",
     "server": "104.160.44.254",
     "port": 443,
@@ -1092,7 +1053,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇺🇸US-24",
+    "name": "🇺🇸US-23",
     "type": "vless",
     "server": "45.138.100.248",
     "port": 14430,
@@ -1105,7 +1066,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-25",
+    "name": "🇺🇸US-24",
     "type": "vless",
     "server": "48.102.204.67",
     "port": 8443,
@@ -1131,7 +1092,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-26",
+    "name": "🇺🇸US-25",
     "type": "vless",
     "server": "107.172.214.195",
     "port": 443,
@@ -1157,7 +1118,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇺🇸US-27",
+    "name": "🇺🇸US-26",
     "type": "vmess",
     "server": "38.91.107.49",
     "port": 18000,
@@ -1196,12 +1157,12 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-15",
+    "name": "🇺🇸US-27",
     "type": "vless",
     "server": "all.tellmethetrue.shop",
     "port": 443,
-    "server_ip": null,
-    "country": "XX",
+    "server_ip": "104.219.250.37",
+    "country": "US",
     "delay_ms": 1,
     "speed_kbps": 0,
     "proto_score": null,
@@ -1209,7 +1170,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-16",
+    "name": "🇽🇽XX-15",
     "type": "vless",
     "server": "swedenafteraventura.space",
     "port": 443,
@@ -1235,7 +1196,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇦🇪AE-03",
+    "name": "🇦🇪AE-04",
     "type": "vless",
     "server": "135.136.183.53",
     "port": 443,
@@ -1274,7 +1235,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇷🇺RU-12",
+    "name": "🇷🇺RU-10",
     "type": "ss",
     "server": "176.32.35.51",
     "port": 10910,
@@ -1287,7 +1248,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-17",
+    "name": "🇽🇽XX-16",
     "type": "vless",
     "server": "volumestyle.komediyatorg.net",
     "port": 443,
@@ -1352,7 +1313,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇦🇪AE-04",
+    "name": "🇦🇪AE-05",
     "type": "vless",
     "server": "188.72.103.4",
     "port": 443,
@@ -1378,7 +1339,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-14",
+    "name": "🇷🇺RU-12",
     "type": "ss",
     "server": "195.133.5.207",
     "port": 20188,
@@ -1404,7 +1365,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-18",
+    "name": "🇽🇽XX-17",
     "type": "vmess",
     "server": "ki9i.dddct.us.ci",
     "port": 443,
@@ -1521,7 +1482,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-19",
+    "name": "🇽🇽XX-18",
     "type": "vless",
     "server": "psf-3.weedly.top",
     "port": 80,
@@ -1638,7 +1599,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-15",
+    "name": "🇷🇺RU-13",
     "type": "vless",
     "server": "93.188.184.150",
     "port": 443,
@@ -1690,7 +1651,7 @@
     "has_raw_link": false
   },
   {
-    "name": "🇽🇽XX-20",
+    "name": "🇽🇽XX-19",
     "type": "vless",
     "server": "ns.l90909l.vip",
     "port": 2096,
@@ -1729,7 +1690,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇹🇼TW-02",
+    "name": "🇹🇼TW-01",
     "type": "hysteria2",
     "server": "vpn-tw-002.fastervpn.world",
     "port": 443,
@@ -1872,7 +1833,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-13",
+    "name": "🇬🇧GB-14",
     "type": "ss",
     "server": "146.70.46.199",
     "port": 8080,
@@ -2002,7 +1963,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-21",
+    "name": "🇽🇽XX-20",
     "type": "vless",
     "server": "gmb.bachidze.com",
     "port": 443,
@@ -2041,7 +2002,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-22",
+    "name": "🇽🇽XX-21",
     "type": "vmess",
     "server": "2001:bc8:32d7:225::3",
     "port": 55009,
@@ -2119,7 +2080,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-23",
+    "name": "🇽🇽XX-22",
     "type": "vmess",
     "server": "t65.o1o.indevs.in",
     "port": 80,
@@ -2171,7 +2132,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-16",
+    "name": "🇷🇺RU-14",
     "type": "vless",
     "server": "cadrin.wtf",
     "port": 443,
@@ -2184,7 +2145,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-16",
+    "name": "🇬🇧GB-17",
     "type": "ss",
     "server": "20.90.75.215",
     "port": 443,
@@ -2210,7 +2171,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-25",
+    "name": "🇽🇽XX-24",
     "type": "trojan",
     "server": "blackshadow.dpdns.org",
     "port": 443,
@@ -2223,7 +2184,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-17",
+    "name": "🇬🇧GB-18",
     "type": "ss",
     "server": "149.102.132.180",
     "port": 443,
@@ -2236,7 +2197,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇷🇺RU-17",
+    "name": "🇷🇺RU-15",
     "type": "vless",
     "server": "186.246.9.29",
     "port": 443,
@@ -2366,7 +2327,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-27",
+    "name": "🇽🇽XX-26",
     "type": "vless",
     "server": "ad-013.pixel9xdmq.info",
     "port": 8443,
@@ -2405,7 +2366,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-28",
+    "name": "🇽🇽XX-27",
     "type": "vless",
     "server": "s12.bsh-net.ru",
     "port": 443,
@@ -2431,7 +2392,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇽🇽XX-29",
+    "name": "🇽🇽XX-28",
     "type": "vless",
     "server": "ad-010.pixel9xdmq.info",
     "port": 8443,
@@ -2496,7 +2457,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-19",
+    "name": "🇬🇧GB-20",
     "type": "vless",
     "server": "46.101.0.105",
     "port": 443,
@@ -2509,7 +2470,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-20",
+    "name": "🇬🇧GB-21",
     "type": "ss",
     "server": "20.108.9.179",
     "port": 443,
@@ -2561,7 +2522,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇬🇧GB-21",
+    "name": "🇬🇧GB-22",
     "type": "ss",
     "server": "51.104.204.185",
     "port": 443,
@@ -2598,5 +2559,44 @@
     "proto_score": null,
     "source": "Barabama-clashnode",
     "has_raw_link": true
+  },
+  {
+    "name": "🇳🇱NL-13",
+    "type": "vless",
+    "server": "164.92.155.204",
+    "port": 443,
+    "server_ip": "164.92.155.204",
+    "country": "NL",
+    "delay_ms": 1,
+    "speed_kbps": 0,
+    "proto_score": null,
+    "source": "Barabama-freeclashnode",
+    "has_raw_link": true
+  },
+  {
+    "name": "🇨🇦CA-22",
+    "type": "vmess",
+    "server": "104.21.14.26",
+    "port": 443,
+    "server_ip": "104.21.14.26",
+    "country": "CA",
+    "delay_ms": 1,
+    "speed_kbps": 0,
+    "proto_score": null,
+    "source": "boka233",
+    "has_raw_link": true
+  },
+  {
+    "name": "🇵🇱PL-02",
+    "type": "vless",
+    "server": "cz.pythonmakemigreat.wiki",
+    "port": 61374,
+    "server_ip": "217.60.33.101",
+    "country": "PL",
+    "delay_ms": 1,
+    "speed_kbps": 0,
+    "proto_score": null,
+    "source": "ovmvo",
+    "has_raw_link": false
   }
 ]
