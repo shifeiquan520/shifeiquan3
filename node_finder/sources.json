@@ -1,4 +1,9 @@
 [
+   {
+    "name": "ovmvo",
+    "url": "https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/permanent/mihomo.yaml",
+    "enabled": true
+  },
   {
     "name": "Barabama-merged",
     "url": "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/merged.txt",
@@ -24,11 +29,7 @@
     "url": "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt",
     "enabled": true
   },
-  {
-    "name": "ovmvo",
-    "url": "https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/permanent/mihomo.yaml",
-    "enabled": true
-  },
+ 
   {
     "name": "efxtv",
     "url": "https://raw.githubusercontent.com/efxtv/free-nodes/main/nodes.txt",
