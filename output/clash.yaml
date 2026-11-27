@@ -1,5 +1,5 @@
 # free-nodes subscription (auto generated)
-# updated: 2026-11-27 01:41:10 UTC
+# updated: 2026-11-27 12:00:18 UTC
 # nodes: 200 (youtube reachable + real bandwidth tested)
 # usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash
 # note: public free nodes, do NOT use for sensitive accounts or payments
@@ -1543,7 +1543,7 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
     short-id: 361d0dd59c70516f
   client-fingerprint: chrome
-  name: 🇬🇧GB-03
+  name: 🇪🇪EE-03
 - type: trojan
   server: 104.16.148.5
   port: 443
@@ -1555,19 +1555,6 @@ proxies:
   ws-opts:
     path: /WangCai-8
   name: 🇨🇦CA-36
-- type: trojan
-  server: ipfast.kingmna.com
-  port: 443
-  password: GBEqN2BggZfFExc5pTTHUA
-  udp: true
-  skip-cert-verify: true
-  sni: cdn.akamai.steamstatic.com
-  network: ws
-  ws-opts:
-    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
-    headers:
-      Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
-  name: 🇺🇸US-24
 - type: vless
   server: 13.141.51.2
   port: 443
@@ -1981,6 +1968,20 @@ proxies:
     headers:
       Host: 666-4sd.pages.dev
   name: 🇨🇦CA-46
+- type: vless
+  server: 172.66.47.202
+  port: 443
+  uuid: d8a2ffbb-1c44-4e83-8a62-5e5fe79cc42a
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: edgetunnel-pages-di9.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-pages-di9.pages.dev
+  name: 🇨🇦CA-47
 - type: trojan
   server: 104.17.22.231
   port: 443
@@ -2569,7 +2570,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: 🇬🇧GB-05
+  name: 🇬🇧GB-03
 - type: ss
   server: 79.127.139.242
   port: 19999
@@ -2717,9 +2718,8 @@ proxy-groups:
   - 🇨🇦CA-35
   - 🇭🇰HK-13
   - 🇲🇾MY-01
-  - 🇬🇧GB-03
+  - 🇪🇪EE-03
   - 🇨🇦CA-36
-  - 🇺🇸US-24
   - 🇳🇱NL-04
   - 🇺🇸US-25
   - 🇺🇸US-26
@@ -2750,6 +2750,7 @@ proxy-groups:
   - 🇨🇦CA-44
   - 🇨🇦CA-45
   - 🇨🇦CA-46
+  - 🇨🇦CA-47
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
@@ -2807,7 +2808,7 @@ proxy-groups:
   - 🇫🇮FI-03
   - 🇽🇽XX-15
   - 🇸🇬SG-07
-  - 🇬🇧GB-05
+  - 🇬🇧GB-03
   - 🇪🇸ES-06
   - 🇱🇹LT-01
   - 🇯🇵JP-07
@@ -2923,9 +2924,8 @@ proxy-groups:
   - 🇨🇦CA-35
   - 🇭🇰HK-13
   - 🇲🇾MY-01
-  - 🇬🇧GB-03
+  - 🇪🇪EE-03
   - 🇨🇦CA-36
-  - 🇺🇸US-24
   - 🇳🇱NL-04
   - 🇺🇸US-25
   - 🇺🇸US-26
@@ -2956,6 +2956,7 @@ proxy-groups:
   - 🇨🇦CA-44
   - 🇨🇦CA-45
   - 🇨🇦CA-46
+  - 🇨🇦CA-47
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
@@ -3013,7 +3014,7 @@ proxy-groups:
   - 🇫🇮FI-03
   - 🇽🇽XX-15
   - 🇸🇬SG-07
-  - 🇬🇧GB-05
+  - 🇬🇧GB-03
   - 🇪🇸ES-06
   - 🇱🇹LT-01
   - 🇯🇵JP-07
@@ -3104,7 +3105,7 @@ proxy-groups:
   - 🇨🇦CA-35
   - 🇭🇰HK-13
   - 🇲🇾MY-01
-  - 🇬🇧GB-03
+  - 🇪🇪EE-03
   - 🇳🇱NL-04
   - 🇺🇸US-25
   - 🇺🇸US-27
@@ -3124,6 +3125,7 @@ proxy-groups:
   - 🇨🇦CA-43
   - 🇨🇦CA-44
   - 🇨🇦CA-45
+  - 🇨🇦CA-47
   - 🇨🇦CA-49
   - 🇨🇦CA-50
   - 🇨🇦CA-51
@@ -3205,6 +3207,7 @@ proxy-groups:
   - 🇨🇦CA-44
   - 🇨🇦CA-45
   - 🇨🇦CA-46
+  - 🇨🇦CA-47
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
@@ -3234,7 +3237,6 @@ proxy-groups:
   - 🇺🇸US-21
   - 🇺🇸US-22
   - 🇺🇸US-23
-  - 🇺🇸US-24
   - 🇺🇸US-25
   - 🇺🇸US-26
   - 🇺🇸US-27
