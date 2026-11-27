@@ -1,5 +1,5 @@
 # free-nodes subscription (auto generated)
-# updated: 2026-11-26 16:46:00 UTC
+# updated: 2026-11-27 01:41:10 UTC
 # nodes: 200 (youtube reachable + real bandwidth tested)
 # usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash
 # note: public free nodes, do NOT use for sensitive accounts or payments
@@ -579,7 +579,7 @@ proxies:
   ws-opts:
     path: /
 - type: vless
-  name: 🇬🇧GB-03
+  name: 🇪🇪EE-02
   server: de15.h1cloud.net
   port: 25362
   uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
@@ -1543,7 +1543,7 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
     short-id: 361d0dd59c70516f
   client-fingerprint: chrome
-  name: 🇩🇪DE-05
+  name: 🇬🇧GB-03
 - type: trojan
   server: 104.16.148.5
   port: 443
@@ -1832,7 +1832,7 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-  name: 🇩🇪DE-06
+  name: 🇩🇪DE-05
 - type: vless
   server: 8a2e72t.nl20.h1clayd.shop
   port: 443
@@ -1846,7 +1846,7 @@ proxies:
     short-id: 8d0d0679f42ffd98
   flow: xtls-rprx-vision
   client-fingerprint: random
-  name: 🇫🇷FR-03
+  name: 🇩🇪DE-06
 - type: trojan
   server: 164.92.228.56
   port: 443
@@ -1859,7 +1859,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇩🇪DE-08
+  name: 🇩🇪DE-07
 - type: vless
   server: 172.64.149.88
   port: 443
@@ -2023,6 +2023,21 @@ proxies:
       Host: EDGETUNNEL-PAGES-DI9.PAGES.DEV
   name: 🇨🇦CA-50
 - type: vless
+  server: cdn.8211992.xyz
+  port: 443
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: mao.kipfelmao.de5.net
+  network: ws
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
+  client-fingerprint: chrome
+  name: 🇨🇦CA-51
+- type: vless
   server: 9030b9g.pl10.h1clayd.shop
   port: 443
   uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
@@ -2119,7 +2134,7 @@ proxies:
   tls: true
   servername: 145.baklajann.ru
   client-fingerprint: chrome
-  name: 🇩🇪DE-09
+  name: 🇩🇪DE-08
 - type: vless
   server: 185.255.115.181
   port: 443
@@ -2133,7 +2148,7 @@ proxies:
     short-id: 6976d670818644cc
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  name: 🇩🇪DE-10
+  name: 🇩🇪DE-09
 - type: hysteria2
   server: vpn-tw-002.fastervpn.world
   port: 443
@@ -2216,7 +2231,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇫🇷FR-04
+  name: 🇫🇷FR-03
 - type: vmess
   server: 67.220.85.46
   port: 18000
@@ -2288,7 +2303,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: 🇫🇷FR-05
+  name: 🇫🇷FR-04
 - type: vless
   server: 66.163.113.9
   port: 443
@@ -2319,7 +2334,7 @@ proxies:
     short-id: 123abcdf
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  name: 🇩🇪DE-11
+  name: 🇩🇪DE-10
 - type: vmess
   server: 172.111.36.123
   port: 1270
@@ -2345,7 +2360,7 @@ proxies:
     short-id: 238e23c5150f02e4
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇩🇪DE-12
+  name: 🇩🇪DE-11
 - type: vmess
   server: 172.99.189.239
   port: 1270
@@ -2356,7 +2371,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇫🇷FR-06
+  name: 🇫🇷FR-05
 - type: trojan
   server: 66.163.122.7
   port: 443
@@ -2391,7 +2406,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   skip-cert-verify: true
   sni: vpn-fr-001.fastervpn.world
-  name: 🇫🇷FR-07
+  name: 🇫🇷FR-06
 - type: trojan
   server: 216.152.155.131
   port: 443
@@ -2505,7 +2520,7 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   skip-cert-verify: true
   sni: www.microsoft.com
-  name: 🇫🇷FR-08
+  name: 🇫🇷FR-07
 - type: vless
   server: 109.248.170.119
   port: 13447
@@ -2554,7 +2569,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: 🇬🇧GB-04
+  name: 🇬🇧GB-05
 - type: ss
   server: 79.127.139.242
   port: 19999
@@ -2591,14 +2606,6 @@ proxies:
       Host: worker3.jegakey970.workers.dev
   client-fingerprint: firefox
   name: 🇺🇦UA-01
-- type: trojan
-  server: 43.255.157.222
-  port: 443
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  skip-cert-verify: true
-  sni: xvxn1hkzf.mateflora.com
-  name: 🇺🇸US-56
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -2638,7 +2645,7 @@ proxy-groups:
   - 🇽🇽XX-09
   - 🇽🇽XX-10
   - 🇺🇸US-07
-  - 🇬🇧GB-03
+  - 🇪🇪EE-02
   - 🇨🇦CA-05
   - 🇷🇺RU-04
   - 🇦🇪AE-02
@@ -2710,7 +2717,7 @@ proxy-groups:
   - 🇨🇦CA-35
   - 🇭🇰HK-13
   - 🇲🇾MY-01
-  - 🇩🇪DE-05
+  - 🇬🇧GB-03
   - 🇨🇦CA-36
   - 🇺🇸US-24
   - 🇳🇱NL-04
@@ -2732,9 +2739,9 @@ proxy-groups:
   - 🇮🇳IN-01
   - 🇭🇰HK-14
   - 🇵🇱PL-02
+  - 🇩🇪DE-05
   - 🇩🇪DE-06
-  - 🇫🇷FR-03
-  - 🇩🇪DE-08
+  - 🇩🇪DE-07
   - 🇨🇦CA-39
   - 🇨🇦CA-40
   - 🇨🇦CA-41
@@ -2746,6 +2753,7 @@ proxy-groups:
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
+  - 🇨🇦CA-51
   - 🇷🇺RU-10
   - 🇨🇦CA-52
   - 🇺🇸US-32
@@ -2754,8 +2762,8 @@ proxy-groups:
   - 🇺🇸US-33
   - 🇺🇸US-34
   - 🇺🇸US-35
+  - 🇩🇪DE-08
   - 🇩🇪DE-09
-  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
@@ -2763,7 +2771,7 @@ proxy-groups:
   - 🇯🇵JP-05
   - 🇧🇬BG-01
   - 🇰🇷KR-03
-  - 🇫🇷FR-04
+  - 🇫🇷FR-03
   - 🇺🇸US-36
   - 🇳🇱NL-06
   - 🇷🇺RU-11
@@ -2771,17 +2779,17 @@ proxy-groups:
   - 🇺🇸US-38
   - 🇺🇸US-39
   - 🇵🇱PL-03
-  - 🇫🇷FR-05
+  - 🇫🇷FR-04
   - 🇨🇦CA-53
   - 🇹🇼TW-02
-  - 🇩🇪DE-11
+  - 🇩🇪DE-10
   - 🇺🇸US-40
-  - 🇩🇪DE-12
-  - 🇫🇷FR-06
+  - 🇩🇪DE-11
+  - 🇫🇷FR-05
   - 🇺🇸US-42
   - 🇸🇪SE-03
   - 🇺🇸US-45
-  - 🇫🇷FR-07
+  - 🇫🇷FR-06
   - 🇺🇸US-46
   - 🇺🇸US-47
   - 🇭🇰HK-18
@@ -2794,17 +2802,16 @@ proxy-groups:
   - 🇺🇸US-50
   - 🇺🇸US-51
   - 🇸🇬SG-06
-  - 🇫🇷FR-08
+  - 🇫🇷FR-07
   - 🇰🇿KZ-01
   - 🇫🇮FI-03
   - 🇽🇽XX-15
   - 🇸🇬SG-07
-  - 🇬🇧GB-04
+  - 🇬🇧GB-05
   - 🇪🇸ES-06
   - 🇱🇹LT-01
   - 🇯🇵JP-07
   - 🇺🇦UA-01
-  - 🇺🇸US-56
 - name: ♻️ 自动选择
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -2844,7 +2851,7 @@ proxy-groups:
   - 🇽🇽XX-09
   - 🇽🇽XX-10
   - 🇺🇸US-07
-  - 🇬🇧GB-03
+  - 🇪🇪EE-02
   - 🇨🇦CA-05
   - 🇷🇺RU-04
   - 🇦🇪AE-02
@@ -2916,7 +2923,7 @@ proxy-groups:
   - 🇨🇦CA-35
   - 🇭🇰HK-13
   - 🇲🇾MY-01
-  - 🇩🇪DE-05
+  - 🇬🇧GB-03
   - 🇨🇦CA-36
   - 🇺🇸US-24
   - 🇳🇱NL-04
@@ -2938,9 +2945,9 @@ proxy-groups:
   - 🇮🇳IN-01
   - 🇭🇰HK-14
   - 🇵🇱PL-02
+  - 🇩🇪DE-05
   - 🇩🇪DE-06
-  - 🇫🇷FR-03
-  - 🇩🇪DE-08
+  - 🇩🇪DE-07
   - 🇨🇦CA-39
   - 🇨🇦CA-40
   - 🇨🇦CA-41
@@ -2952,6 +2959,7 @@ proxy-groups:
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
+  - 🇨🇦CA-51
   - 🇷🇺RU-10
   - 🇨🇦CA-52
   - 🇺🇸US-32
@@ -2960,8 +2968,8 @@ proxy-groups:
   - 🇺🇸US-33
   - 🇺🇸US-34
   - 🇺🇸US-35
+  - 🇩🇪DE-08
   - 🇩🇪DE-09
-  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
@@ -2969,7 +2977,7 @@ proxy-groups:
   - 🇯🇵JP-05
   - 🇧🇬BG-01
   - 🇰🇷KR-03
-  - 🇫🇷FR-04
+  - 🇫🇷FR-03
   - 🇺🇸US-36
   - 🇳🇱NL-06
   - 🇷🇺RU-11
@@ -2977,17 +2985,17 @@ proxy-groups:
   - 🇺🇸US-38
   - 🇺🇸US-39
   - 🇵🇱PL-03
-  - 🇫🇷FR-05
+  - 🇫🇷FR-04
   - 🇨🇦CA-53
   - 🇹🇼TW-02
-  - 🇩🇪DE-11
+  - 🇩🇪DE-10
   - 🇺🇸US-40
-  - 🇩🇪DE-12
-  - 🇫🇷FR-06
+  - 🇩🇪DE-11
+  - 🇫🇷FR-05
   - 🇺🇸US-42
   - 🇸🇪SE-03
   - 🇺🇸US-45
-  - 🇫🇷FR-07
+  - 🇫🇷FR-06
   - 🇺🇸US-46
   - 🇺🇸US-47
   - 🇭🇰HK-18
@@ -3000,17 +3008,16 @@ proxy-groups:
   - 🇺🇸US-50
   - 🇺🇸US-51
   - 🇸🇬SG-06
-  - 🇫🇷FR-08
+  - 🇫🇷FR-07
   - 🇰🇿KZ-01
   - 🇫🇮FI-03
   - 🇽🇽XX-15
   - 🇸🇬SG-07
-  - 🇬🇧GB-04
+  - 🇬🇧GB-05
   - 🇪🇸ES-06
   - 🇱🇹LT-01
   - 🇯🇵JP-07
   - 🇺🇦UA-01
-  - 🇺🇸US-56
 - name: 🎬 视频
   type: select
   proxies:
@@ -3035,7 +3042,7 @@ proxy-groups:
   - 🇽🇽XX-09
   - 🇽🇽XX-10
   - 🇺🇸US-07
-  - 🇬🇧GB-03
+  - 🇪🇪EE-02
   - 🇨🇦CA-05
   - 🇷🇺RU-04
   - 🇦🇪AE-02
@@ -3097,7 +3104,7 @@ proxy-groups:
   - 🇨🇦CA-35
   - 🇭🇰HK-13
   - 🇲🇾MY-01
-  - 🇩🇪DE-05
+  - 🇬🇧GB-03
   - 🇳🇱NL-04
   - 🇺🇸US-25
   - 🇺🇸US-27
@@ -3109,7 +3116,7 @@ proxy-groups:
   - 🇳🇱NL-05
   - 🇮🇳IN-01
   - 🇭🇰HK-14
-  - 🇫🇷FR-03
+  - 🇩🇪DE-06
   - 🇨🇦CA-39
   - 🇨🇦CA-40
   - 🇨🇦CA-41
@@ -3119,13 +3126,14 @@ proxy-groups:
   - 🇨🇦CA-45
   - 🇨🇦CA-49
   - 🇨🇦CA-50
+  - 🇨🇦CA-51
   - 🇷🇺RU-10
   - 🇨🇦CA-52
   - 🇭🇰HK-15
   - 🇸🇬SG-05
   - 🇺🇸US-34
+  - 🇩🇪DE-08
   - 🇩🇪DE-09
-  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
@@ -3136,17 +3144,17 @@ proxy-groups:
   - 🇺🇸US-37
   - 🇨🇦CA-53
   - 🇹🇼TW-02
+  - 🇩🇪DE-10
   - 🇩🇪DE-11
-  - 🇩🇪DE-12
   - 🇸🇪SE-03
-  - 🇫🇷FR-07
+  - 🇫🇷FR-06
   - 🇺🇸US-47
   - 🇷🇺RU-12
   - 🇳🇱NL-08
   - 🇰🇷KR-04
   - 🇰🇷KR-05
   - 🇺🇸US-51
-  - 🇫🇷FR-08
+  - 🇫🇷FR-07
   - 🇰🇿KZ-01
   - 🇽🇽XX-15
   - 🇯🇵JP-07
@@ -3200,6 +3208,7 @@ proxy-groups:
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
+  - 🇨🇦CA-51
   - 🇨🇦CA-52
   - 🇨🇦CA-53
 - name: 🇺🇸 美国
@@ -3248,7 +3257,6 @@ proxy-groups:
   - 🇺🇸US-49
   - 🇺🇸US-50
   - 🇺🇸US-51
-  - 🇺🇸US-56
 - name: 🇭🇰 香港
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3278,11 +3286,11 @@ proxy-groups:
   - 🇩🇪DE-03
   - 🇩🇪DE-05
   - 🇩🇪DE-06
+  - 🇩🇪DE-07
   - 🇩🇪DE-08
   - 🇩🇪DE-09
   - 🇩🇪DE-10
   - 🇩🇪DE-11
-  - 🇩🇪DE-12
 - name: 🇽🇽 XX
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3338,19 +3346,6 @@ proxy-groups:
   - 🇸🇬SG-05
   - 🇸🇬SG-06
   - 🇸🇬SG-07
-- name: 🇫🇷 法国
-  type: url-test
-  url: https://www.youtube.com/generate_204
-  interval: 300
-  tolerance: 50
-  proxies:
-  - 🇫🇷FR-01
-  - 🇫🇷FR-03
-  - 🇫🇷FR-04
-  - 🇫🇷FR-05
-  - 🇫🇷FR-06
-  - 🇫🇷FR-07
-  - 🇫🇷FR-08
 - name: 🇯🇵 日本
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3363,5 +3358,17 @@ proxy-groups:
   - 🇯🇵JP-04
   - 🇯🇵JP-05
   - 🇯🇵JP-07
+- name: 🇫🇷 法国
+  type: url-test
+  url: https://www.youtube.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇫🇷FR-01
+  - 🇫🇷FR-03
+  - 🇫🇷FR-04
+  - 🇫🇷FR-05
+  - 🇫🇷FR-06
+  - 🇫🇷FR-07
 rules:
 - MATCH,🚀 节点选择
