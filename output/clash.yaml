@@ -1,5 +1,5 @@
 # free-nodes subscription (auto generated)
-# updated: 2026-11-27 12:00:18 UTC
+# updated: 2026-11-27 21:06:57 UTC
 # nodes: 200 (youtube reachable + real bandwidth tested)
 # usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash
 # note: public free nodes, do NOT use for sensitive accounts or payments
@@ -633,7 +633,7 @@ proxies:
   sni: mother-earth.fyi
   name: 🇦🇪AE-02
 - type: vmess
-  server: 104.17.77.77
+  server: 172.64.80.1
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -648,42 +648,246 @@ proxies:
     headers:
       Host: v2ray1.dozapp.xyz
   name: 🇨🇦CA-06
-- type: hysteria2
-  server: 2001:bc8:32d7:17b::14
-  port: 22000
-  password: dongtaiwang.com
+- type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: true
-  sni: www.microsoft.com
-  name: 🇽🇽XX-11
-- type: hysteria2
-  server: 2001:bc8:32d7:17b::12
-  port: 22000
-  password: dongtaiwang.com
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  name: 🇽🇽XX-12
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+  name: 🇨🇦CA-07
 - type: hysteria2
   server: 2001:bc8:32d7:17b::10
   port: 22000
   password: dongtaiwang.com
   skip-cert-verify: true
   sni: www.microsoft.com
-  name: 🇽🇽XX-13
-- type: vless
-  server: 172.67.139.189
+  name: 🇽🇽XX-11
+- type: ss
+  server: 47.254.167.157
   port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+  name: 🇩🇪DE-01
+- type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  name: 🇨🇦CA-08
+- type: vless
+  server: 149.28.29.156
+  port: 443
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
   udp: true
   skip-cert-verify: true
   tls: true
-  servername: fr-free.fastestrelay.com
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /ws
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: itunes.apple.com
   client-fingerprint: chrome
-  name: 🇨🇦CA-07
+  name: 🇯🇵JP-02
+- type: vless
+  server: 198.13.53.39
+  port: 443
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  client-fingerprint: chrome
+  name: 🇯🇵JP-03
+- type: vless
+  server: 139.162.20.241
+  port: 443
+  uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o
+    short-id: 640c807d
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  client-fingerprint: chrome
+  name: 🇸🇬SG-01
+- type: vless
+  server: 172.236.227.60
+  port: 443
+  uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo
+    short-id: 664c1530
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  client-fingerprint: chrome
+  name: 🇺🇸US-08
+- type: vless
+  server: 172.233.142.149
+  port: 443
+  uuid: 61e3954d-0d66-4b69-b6cd-9b4fc2352303
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY
+    short-id: 4206512a
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  client-fingerprint: chrome
+  name: 🇺🇸US-09
+- type: vless
+  server: 139.180.221.53
+  port: 443
+  uuid: 2b30d0df-6ebe-4aed-9bad-b7c554e35e1d
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: plfXwkb-ewI6iibJBTRmPnf8eqPId1BfdArMIm3_mB4
+    short-id: 2f6f6f87
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  client-fingerprint: chrome
+  name: 🇸🇬SG-02
+- type: vless
+  server: 172.236.241.130
+  port: 443
+  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
+    short-id: 51ecfe9e
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  client-fingerprint: chrome
+  name: 🇺🇸US-10
+- type: vless
+  server: 172.233.129.172
+  port: 443
+  uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: itunes.apple.com
+  reality-opts:
+    public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4
+    short-id: 5818adc3
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  client-fingerprint: chrome
+  name: 🇺🇸US-11
+- type: vmess
+  server: 188.114.99.137
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  client-fingerprint: chrome
+  name: 🇺🇸US-12
+- type: vmess
+  server: 172.64.145.93
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  name: 🇨🇦CA-10
+- type: vmess
+  server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  client-fingerprint: chrome
+  name: 🇨🇦CA-11
 - type: vless
   server: 104.17.136.102
   port: 2087
@@ -698,14 +902,14 @@ proxies:
     headers:
       Host: rezanoori4295.pages.dev
   client-fingerprint: chrome
-  name: 🇨🇦CA-08
+  name: 🇨🇦CA-12
 - type: ss
   server: 47.254.128.109
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-  name: 🇩🇪DE-01
+  name: 🇩🇪DE-02
 - type: vless
   server: 196.245.52.183
   port: 443
@@ -733,7 +937,7 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
   client-fingerprint: chrome
-  name: 🇨🇦CA-09
+  name: 🇨🇦CA-13
 - type: vless
   server: 162.159.49.145
   port: 443
@@ -748,7 +952,7 @@ proxies:
     headers:
       Host: ld.223350.xyz
   client-fingerprint: chrome
-  name: 🇨🇦CA-10
+  name: 🇨🇦CA-14
 - type: vless
   server: 162.159.43.131
   port: 443
@@ -763,7 +967,7 @@ proxies:
     headers:
       Host: ld.223350.xyz
   client-fingerprint: chrome
-  name: 🇨🇦CA-11
+  name: 🇨🇦CA-15
 - type: trojan
   server: 104.18.152.152
   port: 443
@@ -774,7 +978,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-  name: 🇨🇦CA-12
+  name: 🇨🇦CA-16
 - type: trojan
   server: 104.16.174.22
   port: 443
@@ -785,7 +989,7 @@ proxies:
   network: ws
   ws-opts:
     path: //assignment
-  name: 🇨🇦CA-16
+  name: 🇨🇦CA-20
 - type: vless
   server: c20s5.portablesubmarines.com
   port: 443
@@ -811,7 +1015,7 @@ proxies:
   client-fingerprint: ios
   alpn:
   - h2
-  name: 🇺🇸US-08
+  name: 🇺🇸US-13
 - type: vless
   server: 108.162.194.135
   port: 443
@@ -825,7 +1029,7 @@ proxies:
     path: /
     headers:
       Host: nbhhh.mrcool.kdns.fr
-  name: 🇨🇦CA-18
+  name: 🇨🇦CA-22
 - type: vless
   server: 167.82.101.251
   port: 443
@@ -839,7 +1043,7 @@ proxies:
     path: /
     headers:
       Host: newip.global.ssl.fastly.neT.
-  name: 🇺🇸US-09
+  name: 🇺🇸US-14
 - type: trojan
   server: www.ignitelimit.com
   port: 443
@@ -849,7 +1053,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-  name: 🇨🇦CA-19
+  name: 🇨🇦CA-23
 - type: vless
   server: support.zoom.us
   port: 443
@@ -864,7 +1068,7 @@ proxies:
     headers:
       Host: support.zoom.us.yxls.eu.cc
   client-fingerprint: chrome
-  name: 🇺🇸US-10
+  name: 🇺🇸US-15
 - type: vless
   server: 104.24.9.6
   port: 443
@@ -879,7 +1083,7 @@ proxies:
     headers:
       Host: ld.223350.xyz
   client-fingerprint: chrome
-  name: 🇨🇦CA-20
+  name: 🇨🇦CA-24
 - type: vless
   server: cf.090227.xyz
   port: 443
@@ -894,7 +1098,7 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
   client-fingerprint: chrome
-  name: 🇨🇦CA-21
+  name: 🇨🇦CA-25
 - type: vless
   server: 162.159.10.87
   port: 443
@@ -909,7 +1113,7 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
   client-fingerprint: chrome
-  name: 🇨🇦CA-22
+  name: 🇨🇦CA-26
 - type: vless
   server: 162.159.60.167
   port: 443
@@ -924,7 +1128,7 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
   client-fingerprint: chrome
-  name: 🇨🇦CA-23
+  name: 🇨🇦CA-27
 - type: vless
   server: cf.130519.xyz
   port: 443
@@ -939,7 +1143,7 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
   client-fingerprint: chrome
-  name: 🇨🇦CA-24
+  name: 🇨🇦CA-28
 - type: vless
   server: 18.239.134.69
   port: 80
@@ -978,7 +1182,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
-  name: 🇸🇬SG-01
+  name: 🇸🇬SG-03
 - type: vless
   server: www.true.th
   port: 80
@@ -991,7 +1195,7 @@ proxies:
     path: /
     headers:
       Host: d2pwbkmfr5lxa4.cloudfront.net
-  name: 🇺🇸US-11
+  name: 🇺🇸US-16
 - type: vless
   server: 199.232.78.159
   port: 443
@@ -1006,7 +1210,7 @@ proxies:
     headers:
       Host: pan11.global.ssl.fastly.net
   client-fingerprint: chrome
-  name: 🇺🇸US-12
+  name: 🇺🇸US-17
 - type: vless
   server: 217.60.193.1
   port: 443
@@ -1016,7 +1220,7 @@ proxies:
   tls: true
   servername: ddc-akn.astralweb.tech
   client-fingerprint: firefox
-  name: 🇩🇪DE-02
+  name: 🇩🇪DE-03
 - type: vless
   server: 3.170.185.91
   port: 80
@@ -1029,7 +1233,7 @@ proxies:
     path: /
     headers:
       Host: d2pwbkmfr5lxa4.cloudfront.net
-  name: 🇺🇸US-13
+  name: 🇺🇸US-18
 - type: vless
   server: 2.27.27.64
   port: 443
@@ -1043,7 +1247,7 @@ proxies:
     short-id: 825d392c67e4
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇯🇵JP-02
+  name: 🇯🇵JP-04
 - type: vless
   server: 104.21.88.174
   port: 2052
@@ -1057,7 +1261,7 @@ proxies:
     v2ray-http-upgrade: true
     headers:
       Host: nexo.xelviro.ir
-  name: 🇨🇦CA-25
+  name: 🇨🇦CA-29
 - type: vless
   server: 45.131.4.115
   port: 80
@@ -1083,7 +1287,7 @@ proxies:
     path: /pyip=Telegram🇨🇳++
     headers:
       Host: holy-breeze-0bac.47-dec.workers.dev
-  name: 🇺🇸US-14
+  name: 🇺🇸US-19
 - type: vless
   server: 162.159.81.104
   port: 80
@@ -1096,7 +1300,7 @@ proxies:
     path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
     headers:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-  name: 🇨🇦CA-26
+  name: 🇨🇦CA-30
 - type: vless
   server: 108.162.198.178
   port: 80
@@ -1109,7 +1313,7 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  name: 🇺🇸US-15
+  name: 🇺🇸US-20
 - type: vless
   server: 45.131.208.4
   port: 80
@@ -1136,7 +1340,7 @@ proxies:
     short-id: 4ff31b18d1bd8227
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  name: 🇩🇪DE-03
+  name: 🇩🇪DE-04
 - type: vless
   server: 89.35.14.34
   port: 443
@@ -1166,7 +1370,7 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: notls.lukongtou.eu.org
-  name: 🇯🇵JP-03
+  name: 🇯🇵JP-05
 - type: vless
   server: 88.218.44.4
   port: 993
@@ -1179,7 +1383,7 @@ proxies:
     public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇺🇸US-19
+  name: 🇺🇸US-24
 - type: vless
   server: 2.27.56.216
   port: 443
@@ -1205,7 +1409,7 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: spring-sound-8d8e.36-9ff.workers.dev
-  name: 🇨🇦CA-29
+  name: 🇨🇦CA-33
 - type: vless
   server: 103.25.202.102
   port: 443
@@ -1220,7 +1424,7 @@ proxies:
     headers:
       Host: asia.csmaster.site
   client-fingerprint: chrome
-  name: 🇸🇬SG-02
+  name: 🇸🇬SG-04
 - type: vless
   server: 104.27.0.121
   port: 443
@@ -1233,7 +1437,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-  name: 🇨🇦CA-30
+  name: 🇨🇦CA-34
 - type: vless
   server: 104.21.28.176
   port: 443
@@ -1248,7 +1452,7 @@ proxies:
     headers:
       Host: sg.lovehk.xyz
   client-fingerprint: chrome
-  name: 🇨🇦CA-31
+  name: 🇨🇦CA-35
 - type: vmess
   server: hk2.998998.best
   port: 443
@@ -1264,7 +1468,7 @@ proxies:
     path: /asivewritten
     headers:
       Host: server15.9966338.xyz
-  name: 🇨🇦CA-32
+  name: 🇨🇦CA-36
 - type: vless
   server: edge-d6d4b0609348.eu-cdn391.com
   port: 443
@@ -1278,6 +1482,14 @@ proxies:
     short-id: 1a083bf915dd9164
   client-fingerprint: firefox
   name: 🇪🇸ES-02
+- type: vmess
+  server: 23.165.200.150
+  port: 52080
+  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
+  alterId: 0
+  cipher: auto
+  udp: true
+  name: 🇩🇪DE-06
 - type: vless
   server: api.ferrin.uk
   port: 443
@@ -1287,7 +1499,7 @@ proxies:
   tls: true
   servername: 7d1a74fd.ferrin.uk
   client-fingerprint: chrome
-  name: 🇺🇸US-21
+  name: 🇺🇸US-26
 - type: vless
   server: base.hosamobenl.co.uk
   port: 443
@@ -1300,6 +1512,20 @@ proxies:
   alpn:
   - http/1.1
   name: 🇮🇷IR-03
+- type: vless
+  server: 201.58.134.155
+  port: 443
+  uuid: 1ab3c7c3-e1cf-4a20-bd19-ea9041e5518b
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: mena-images.shop.samsung.com
+  reality-opts:
+    public-key: A97fxYOlZFXzk9At5tXIU9PuCdvF42o0JQdovTq0wi8
+    short-id: 2958ac91fd7d96
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  name: 🇺🇸US-27
 - type: vless
   server: 136.148.208.221
   port: 443
@@ -1326,7 +1552,7 @@ proxies:
     path: /xiron
     headers:
       Host: xstack.mahanfixe.workers.dev
-  name: 🇨🇦CA-33
+  name: 🇨🇦CA-37
 - type: vless
   server: ide.vipvirtualnet.eu
   port: 9990
@@ -1404,7 +1630,7 @@ proxies:
     headers:
       Host: j4mr-d9oj1at9i-8kuayba9kocwx7uzn.pages.dev
   client-fingerprint: chrome
-  name: 🇨🇦CA-34
+  name: 🇨🇦CA-38
 - type: vless
   server: 83.141.92.168
   port: 443
@@ -1447,7 +1673,7 @@ proxies:
   grpc-opts:
     grpc-service-name: 99f2107b03f8
   client-fingerprint: edge
-  name: 🇺🇸US-22
+  name: 🇺🇸US-28
 - type: vless
   server: help1.digikala-aparat-zula.com
   port: 443
@@ -1462,7 +1688,7 @@ proxies:
     headers:
       Host: wallweb8.pages.dev
   client-fingerprint: chrome
-  name: 🇺🇸US-23
+  name: 🇨🇷CR-01
 - type: vless
   server: 196.199.122.2
   port: 443
@@ -1504,7 +1730,7 @@ proxies:
     headers:
       Host: v2n6.11676767.xyz
   client-fingerprint: chrome
-  name: 🇨🇦CA-35
+  name: 🇨🇦CA-39
 - type: vless
   server: 38.207.178.28
   port: 20086
@@ -1554,7 +1780,7 @@ proxies:
   network: ws
   ws-opts:
     path: /WangCai-8
-  name: 🇨🇦CA-36
+  name: 🇨🇦CA-40
 - type: vless
   server: 13.141.51.2
   port: 443
@@ -1582,7 +1808,7 @@ proxies:
     headers:
       Host: d39333476.pages.dev
   client-fingerprint: chrome
-  name: 🇺🇸US-25
+  name: 🇺🇸US-30
 - type: trojan
   server: 141.98.41.28
   port: 443
@@ -1595,7 +1821,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇺🇸US-26
+  name: 🇺🇸US-31
 - type: vless
   server: 8.47.69.6
   port: 2083
@@ -1610,7 +1836,7 @@ proxies:
     headers:
       Host: newwk1.f1w.de5.net
   client-fingerprint: firefox
-  name: 🇺🇸US-27
+  name: 🇺🇸US-32
 - type: vless
   server: 104.16.244.34
   port: 2053
@@ -1624,7 +1850,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: cffq.pages.dev
-  name: 🇨🇦CA-37
+  name: 🇨🇦CA-41
 - type: trojan
   server: 213.111.177.107
   port: 443
@@ -1650,7 +1876,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇺🇸US-29
+  name: 🇺🇸US-34
 - type: vless
   server: 181.36.229.212
   port: 443
@@ -1684,7 +1910,7 @@ proxies:
     headers:
       Host: jp3.yohototo.top
   client-fingerprint: unsafe
-  name: 🇨🇦CA-38
+  name: 🇨🇦CA-42
 - type: trojan
   server: sclass-01.catcat321.com
   port: 20103
@@ -1692,7 +1918,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: hk.catxstar.com
-  name: 🇺🇸US-30
+  name: 🇺🇸US-35
 - type: trojan
   server: 94.43.238.112
   port: 2053
@@ -1720,7 +1946,7 @@ proxies:
     headers:
       Host: jp3.yohototo.top
   client-fingerprint: unsafe
-  name: 🇯🇵JP-04
+  name: 🇯🇵JP-06
 - type: trojan
   server: 167.71.215.36
   port: 443
@@ -1733,7 +1959,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇸🇬SG-03
+  name: 🇸🇬SG-05
 - type: trojan
   server: 159.65.1.74
   port: 443
@@ -1746,7 +1972,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇸🇬SG-04
+  name: 🇸🇬SG-06
 - type: vless
   server: birchbark.gerqix.online
   port: 443
@@ -1813,13 +2039,6 @@ proxies:
     headers:
       Host: 666-4sd.pages.dev
   name: 🇵🇱PL-02
-- type: ss
-  server: 47.254.167.157
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-  name: 🇩🇪DE-05
 - type: vless
   server: 8a2e72t.nl20.h1clayd.shop
   port: 443
@@ -1833,7 +2052,7 @@ proxies:
     short-id: 8d0d0679f42ffd98
   flow: xtls-rprx-vision
   client-fingerprint: random
-  name: 🇩🇪DE-06
+  name: 🇩🇪DE-07
 - type: trojan
   server: 164.92.228.56
   port: 443
@@ -1846,7 +2065,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇩🇪DE-07
+  name: 🇩🇪DE-08
 - type: vless
   server: 172.64.149.88
   port: 443
@@ -1861,7 +2080,7 @@ proxies:
     headers:
       Host: top-e4s.pages.dev
   client-fingerprint: unsafe
-  name: 🇨🇦CA-39
+  name: 🇨🇦CA-43
 - type: vless
   server: 104.17.147.208
   port: 443
@@ -1878,7 +2097,7 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - h3
-  name: 🇨🇦CA-40
+  name: 🇨🇦CA-44
 - type: vless
   server: 172.64.152.19
   port: 443
@@ -1893,7 +2112,7 @@ proxies:
     headers:
       Host: jp3.yohototo.top
   client-fingerprint: unsafe
-  name: 🇨🇦CA-41
+  name: 🇨🇦CA-45
 - type: vless
   server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   port: 443
@@ -1906,7 +2125,7 @@ proxies:
   ws-opts:
     path: /
   client-fingerprint: chrome
-  name: 🇨🇦CA-42
+  name: 🇨🇦CA-46
 - type: vless
   server: fu.baiproxy.us.ci
   port: 2087
@@ -1921,7 +2140,7 @@ proxies:
     headers:
       Host: fu.baiproxy.us.ci
   client-fingerprint: qq
-  name: 🇨🇦CA-43
+  name: 🇨🇦CA-47
 - type: vless
   server: 172.67.67.89
   port: 443
@@ -1940,7 +2159,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: 🇨🇦CA-44
+  name: 🇨🇦CA-48
 - type: vless
   server: 104.26.7.96
   port: 8443
@@ -1954,7 +2173,7 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-pages-di9.pages.dev
-  name: 🇨🇦CA-45
+  name: 🇨🇦CA-49
 - type: trojan
   server: 104.17.187.57
   port: 443
@@ -1967,21 +2186,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇨🇦CA-46
-- type: vless
-  server: 172.66.47.202
-  port: 443
-  uuid: d8a2ffbb-1c44-4e83-8a62-5e5fe79cc42a
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: edgetunnel-pages-di9.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-pages-di9.pages.dev
-  name: 🇨🇦CA-47
+  name: 🇨🇦CA-50
 - type: trojan
   server: 104.17.22.231
   port: 443
@@ -1994,7 +2199,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇨🇦CA-48
+  name: 🇨🇦CA-52
 - type: vless
   server: 188.114.96.172
   port: 443
@@ -2008,7 +2213,7 @@ proxies:
     path: /ws/proxyip=proxyip.us.cmliussss.net:443,proxyip.nl.cmliussss.net:443,proxyip.tp1.090227.xyz:443,proxyip.fr.cmliussss.net:443,proxyip.kr.cmliussss.net:443
     headers:
       Host: EDGETUNNEL-PAGES-DI9.PAGES.DEV
-  name: 🇨🇦CA-49
+  name: 🇨🇦CA-53
 - type: vless
   server: 188.114.97.26
   port: 2087
@@ -2022,7 +2227,7 @@ proxies:
     path: /ws/proxyip=proxyip.us.cmliussss.net:443,proxyip.nl.cmliussss.net:443,proxyip.tp1.090227.xyz:443,proxyip.fr.cmliussss.net:443,proxyip.kr.cmliussss.net:443
     headers:
       Host: EDGETUNNEL-PAGES-DI9.PAGES.DEV
-  name: 🇨🇦CA-50
+  name: 🇨🇦CA-54
 - type: vless
   server: cdn.8211992.xyz
   port: 443
@@ -2037,7 +2242,7 @@ proxies:
     headers:
       Host: mao.kipfelmao.de5.net
   client-fingerprint: chrome
-  name: 🇨🇦CA-51
+  name: 🇨🇦CA-55
 - type: vless
   server: 9030b9g.pl10.h1clayd.shop
   port: 443
@@ -2065,7 +2270,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-  name: 🇨🇦CA-52
+  name: 🇨🇦CA-56
 - type: vmess
   server: 38.91.106.182
   port: 1270
@@ -2076,7 +2281,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇺🇸US-32
+  name: 🇺🇸US-37
 - type: hysteria2
   server: 202.146.222.89
   port: 443
@@ -2097,14 +2302,14 @@ proxies:
     short-id: b2efed6d157e7bb0
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇸🇬SG-05
+  name: 🇸🇬SG-07
 - type: ss
   server: 15.204.246.108
   port: 8881
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-  name: 🇺🇸US-33
+  name: 🇺🇸US-38
 - type: vless
   server: 15.204.97.214
   port: 23576
@@ -2118,14 +2323,14 @@ proxies:
     short-id: '01'
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇺🇸US-34
+  name: 🇺🇸US-39
 - type: ss
   server: 38.22.17.129
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: 🇺🇸US-35
+  name: 🇺🇸US-40
 - type: vless
   server: 194.156.26.28
   port: 443
@@ -2135,7 +2340,7 @@ proxies:
   tls: true
   servername: 145.baklajann.ru
   client-fingerprint: chrome
-  name: 🇩🇪DE-08
+  name: 🇩🇪DE-09
 - type: vless
   server: 185.255.115.181
   port: 443
@@ -2149,7 +2354,7 @@ proxies:
     short-id: 6976d670818644cc
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  name: 🇩🇪DE-09
+  name: 🇩🇪DE-10
 - type: hysteria2
   server: vpn-tw-002.fastervpn.world
   port: 443
@@ -2185,19 +2390,6 @@ proxies:
   client-fingerprint: chrome
   name: 🇻🇳VN-01
 - type: vless
-  server: leviko-se6979.shopingggg.ir
-  port: 48115
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-  client-fingerprint: chrome
-  name: 🇽🇽XX-14
-- type: vless
   server: 155.248.175.201
   port: 23169
   uuid: 9da605d3-f5f7-4135-f806-450f036f9351
@@ -2207,7 +2399,7 @@ proxies:
   servername: djj.zjlo.top
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇯🇵JP-05
+  name: 🇯🇵JP-07
 - type: ss
   server: 213.183.63.60
   port: 9049
@@ -2222,6 +2414,20 @@ proxies:
   skip-cert-verify: true
   sni: 127.0.0.1
   name: 🇰🇷KR-03
+- type: vless
+  server: 136.234.36.156
+  port: 48637
+  uuid: cae99415-10a6-4317-81bd-19a4586b5d76
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: 6da588t.nl7.h1clayd.click
+  reality-opts:
+    public-key: XFWI_MEMvP6tajJyho0y7JYe5AkDKtNf4b5Bpkwfg0k
+    short-id: 1125242fc281d82f
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  name: 🇷🇺RU-11
 - type: vmess
   server: 162.19.82.57
   port: 1270
@@ -2240,7 +2446,20 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-  name: 🇺🇸US-36
+  name: 🇺🇸US-41
+- type: vless
+  server: 87.228.92.112
+  port: 25135
+  uuid: e89a2a0e-7803-447e-b050-3ba67962ed95
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: s-25452.nl18.h1clayd.click
+  reality-opts:
+    public-key: zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4
+    short-id: fe51f413b9646e97
+  client-fingerprint: firefox
+  name: 🇷🇺RU-12
 - type: ss
   server: 82.38.31.176
   port: 8080
@@ -2257,7 +2476,7 @@ proxies:
   tls: true
   servername: mama511.baklajann.ru
   client-fingerprint: chrome
-  name: 🇷🇺RU-11
+  name: 🇷🇺RU-13
 - type: vless
   server: 169.40.42.90
   port: 443
@@ -2271,7 +2490,7 @@ proxies:
     short-id: c39cc7310a
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇺🇸US-37
+  name: 🇺🇸US-42
 - type: vmess
   server: 38.64.138.135
   port: 1270
@@ -2282,7 +2501,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇺🇸US-38
+  name: 🇺🇸US-43
 - type: vmess
   server: 84.17.41.2
   port: 18000
@@ -2290,14 +2509,7 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-  name: 🇺🇸US-39
-- type: ss
-  server: 217.30.10.70
-  port: 9053
-  cipher: aes-256-cfb
-  password: SBM7R883jBmnqe6C
-  udp: true
-  name: 🇵🇱PL-03
+  name: 🇺🇸US-44
 - type: ss
   server: 167.17.64.22
   port: 19999
@@ -2314,7 +2526,7 @@ proxies:
   tls: true
   servername: kuruish.org
   client-fingerprint: chrome
-  name: 🇨🇦CA-53
+  name: 🇨🇦CA-57
 - type: hysteria2
   server: 103.115.109.49
   port: 443
@@ -2335,7 +2547,7 @@ proxies:
     short-id: 123abcdf
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  name: 🇩🇪DE-10
+  name: 🇩🇪DE-11
 - type: vmess
   server: 172.111.36.123
   port: 1270
@@ -2347,21 +2559,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: true
   client-fingerprint: chrome
-  name: 🇺🇸US-40
-- type: vless
-  server: 46.28.69.123
-  port: 443
-  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: gateway.icloud.com
-  reality-opts:
-    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
-    short-id: 238e23c5150f02e4
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  name: 🇩🇪DE-11
+  name: 🇺🇸US-45
 - type: vmess
   server: 172.99.189.239
   port: 1270
@@ -2380,7 +2578,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 66.163.122.7
-  name: 🇺🇸US-42
+  name: 🇺🇸US-47
 - type: vless
   server: 31.77.144.255
   port: 8444
@@ -2400,7 +2598,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: 🇺🇸US-45
+  name: 🇺🇸US-50
 - type: hysteria2
   server: 13.36.234.11
   port: 443
@@ -2415,7 +2613,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: ekb.eg
-  name: 🇺🇸US-46
+  name: 🇺🇸US-51
 - type: vless
   server: 45.138.100.248
   port: 14430
@@ -2428,7 +2626,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.138.100.248
-  name: 🇺🇸US-47
+  name: 🇺🇸US-52
 - type: vmess
   server: dog-hk.kunlun01dns.com
   port: 21019
@@ -2446,7 +2644,23 @@ proxies:
   tls: true
   servername: plaindune.com
   client-fingerprint: chrome
-  name: 🇷🇺RU-12
+  name: 🇷🇺RU-14
+- type: vless
+  server: 89.124.122.19
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: 0592efg.us8.h1clayd.click
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
+  client-fingerprint: edge
+  name: 🇳🇱NL-08
 - type: vless
   server: 51.158.206.98
   port: 23576
@@ -2460,7 +2674,7 @@ proxies:
     short-id: '01'
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇳🇱NL-08
+  name: 🇳🇱NL-09
 - type: hysteria2
   server: 152-69-231-175.liao.kdns.fr
   port: 50160
@@ -2475,7 +2689,7 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-  name: 🇺🇸US-48
+  name: 🇺🇸US-53
 - type: hysteria2
   server: 132.226.226.189
   port: 50160
@@ -2489,7 +2703,7 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-  name: 🇺🇸US-49
+  name: 🇺🇸US-54
 - type: vmess
   server: 162.251.60.97
   port: 1270
@@ -2500,113 +2714,14 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇺🇸US-50
+  name: 🇺🇸US-55
 - type: hysteria2
   server: 38.76.150.108
   port: 36712
   password: AIcYjw5Oc9Rrrr9SGDUBbBIC
   skip-cert-verify: true
   sni: 38.76.150.108
-  name: 🇺🇸US-51
-- type: ss
-  server: 149.88.106.73
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: 🇸🇬SG-06
-- type: hysteria2
-  server: 62.210.147.2
-  port: 43115
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  name: 🇫🇷FR-07
-- type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  client-fingerprint: chrome
-  name: 🇰🇿KZ-01
-- type: vmess
-  server: 185.212.149.7
-  port: 2053
-  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
-  alterId: 0
-  cipher: auto
-  udp: true
-  name: 🇫🇮FI-03
-- type: vless
-  server: leviko-de8799.shopingggg.ir
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: storage.yandexcloud.net
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  name: 🇽🇽XX-15
-- type: ss
-  server: 149.88.107.47
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: 🇸🇬SG-07
-- type: ss
-  server: 38.114.120.221
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: 🇬🇧GB-03
-- type: ss
-  server: 79.127.139.242
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: 🇪🇸ES-06
-- type: ss
-  server: 195.238.126.20
-  port: 9012
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-  udp: true
-  name: 🇱🇹LT-01
-- type: hysteria2
-  server: 8.211.175.236
-  port: 8443
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  skip-cert-verify: true
-  sni: 8.211.175.236
-  name: 🇯🇵JP-07
-- type: vless
-  server: 45.135.235.255
-  port: 443
-  uuid: 48cfe81c-3f0b-457f-b740-fbbfc6f679aa
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: worker3.jegakey970.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: worker3.jegakey970.workers.dev
-  client-fingerprint: firefox
-  name: 🇺🇦UA-01
+  name: 🇺🇸US-56
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -2651,101 +2766,109 @@ proxy-groups:
   - 🇷🇺RU-04
   - 🇦🇪AE-02
   - 🇨🇦CA-06
-  - 🇽🇽XX-11
-  - 🇽🇽XX-12
-  - 🇽🇽XX-13
   - 🇨🇦CA-07
-  - 🇨🇦CA-08
+  - 🇽🇽XX-11
   - 🇩🇪DE-01
-  - 🇪🇸ES-01
-  - 🇨🇦CA-09
+  - 🇨🇦CA-08
+  - 🇯🇵JP-02
+  - 🇯🇵JP-03
+  - 🇸🇬SG-01
+  - 🇺🇸US-08
+  - 🇺🇸US-09
+  - 🇸🇬SG-02
+  - 🇺🇸US-10
+  - 🇺🇸US-11
+  - 🇺🇸US-12
   - 🇨🇦CA-10
   - 🇨🇦CA-11
   - 🇨🇦CA-12
+  - 🇩🇪DE-02
+  - 🇪🇸ES-01
+  - 🇨🇦CA-13
+  - 🇨🇦CA-14
+  - 🇨🇦CA-15
   - 🇨🇦CA-16
-  - 🇳🇱NL-02
-  - 🇺🇸US-08
-  - 🇨🇦CA-18
-  - 🇺🇸US-09
-  - 🇨🇦CA-19
-  - 🇺🇸US-10
   - 🇨🇦CA-20
-  - 🇨🇦CA-21
+  - 🇳🇱NL-02
+  - 🇺🇸US-13
   - 🇨🇦CA-22
+  - 🇺🇸US-14
   - 🇨🇦CA-23
+  - 🇺🇸US-15
   - 🇨🇦CA-24
+  - 🇨🇦CA-25
+  - 🇨🇦CA-26
+  - 🇨🇦CA-27
+  - 🇨🇦CA-28
   - 🇹🇭TH-01
   - 🇰🇷KR-01
-  - 🇸🇬SG-01
-  - 🇺🇸US-11
-  - 🇺🇸US-12
-  - 🇩🇪DE-02
-  - 🇺🇸US-13
-  - 🇯🇵JP-02
-  - 🇨🇦CA-25
-  - 🇮🇷IR-02
-  - 🇺🇸US-14
-  - 🇨🇦CA-26
-  - 🇺🇸US-15
-  - 🇧🇿BZ-01
+  - 🇸🇬SG-03
+  - 🇺🇸US-16
+  - 🇺🇸US-17
   - 🇩🇪DE-03
-  - 🇲🇩MD-01
-  - 🇯🇵JP-03
-  - 🇺🇸US-19
-  - 🇸🇪SE-01
+  - 🇺🇸US-18
+  - 🇯🇵JP-04
   - 🇨🇦CA-29
-  - 🇸🇬SG-02
+  - 🇮🇷IR-02
+  - 🇺🇸US-19
   - 🇨🇦CA-30
-  - 🇨🇦CA-31
-  - 🇨🇦CA-32
-  - 🇪🇸ES-02
-  - 🇺🇸US-21
-  - 🇮🇷IR-03
-  - 🇸🇪SE-02
+  - 🇺🇸US-20
+  - 🇧🇿BZ-01
+  - 🇩🇪DE-04
+  - 🇲🇩MD-01
+  - 🇯🇵JP-05
+  - 🇺🇸US-24
+  - 🇸🇪SE-01
   - 🇨🇦CA-33
+  - 🇸🇬SG-04
+  - 🇨🇦CA-34
+  - 🇨🇦CA-35
+  - 🇨🇦CA-36
+  - 🇪🇸ES-02
+  - 🇩🇪DE-06
+  - 🇺🇸US-26
+  - 🇮🇷IR-03
+  - 🇺🇸US-27
+  - 🇸🇪SE-02
+  - 🇨🇦CA-37
   - 🇮🇷IR-04
   - 🇳🇱NL-03
   - 🇰🇷KR-02
   - 🇫🇮FI-02
   - 🇭🇰HK-12
-  - 🇨🇦CA-34
+  - 🇨🇦CA-38
   - 🇮🇪IE-01
   - 🇳🇪NE-01
-  - 🇺🇸US-22
-  - 🇺🇸US-23
+  - 🇺🇸US-28
+  - 🇨🇷CR-01
   - 🇱🇾LY-01
   - 🇫🇷FR-01
-  - 🇨🇦CA-35
+  - 🇨🇦CA-39
   - 🇭🇰HK-13
   - 🇲🇾MY-01
   - 🇪🇪EE-03
-  - 🇨🇦CA-36
+  - 🇨🇦CA-40
   - 🇳🇱NL-04
-  - 🇺🇸US-25
-  - 🇺🇸US-26
-  - 🇺🇸US-27
-  - 🇨🇦CA-37
-  - 🇨🇾CY-01
-  - 🇺🇸US-29
-  - 🇩🇴DO-01
-  - 🇨🇦CA-38
   - 🇺🇸US-30
+  - 🇺🇸US-31
+  - 🇺🇸US-32
+  - 🇨🇦CA-41
+  - 🇨🇾CY-01
+  - 🇺🇸US-34
+  - 🇩🇴DO-01
+  - 🇨🇦CA-42
+  - 🇺🇸US-35
   - 🇬🇪GE-01
-  - 🇯🇵JP-04
-  - 🇸🇬SG-03
-  - 🇸🇬SG-04
+  - 🇯🇵JP-06
+  - 🇸🇬SG-05
+  - 🇸🇬SG-06
   - 🇷🇺RU-05
   - 🇳🇱NL-05
   - 🇮🇳IN-01
   - 🇭🇰HK-14
   - 🇵🇱PL-02
-  - 🇩🇪DE-05
-  - 🇩🇪DE-06
   - 🇩🇪DE-07
-  - 🇨🇦CA-39
-  - 🇨🇦CA-40
-  - 🇨🇦CA-41
-  - 🇨🇦CA-42
+  - 🇩🇪DE-08
   - 🇨🇦CA-43
   - 🇨🇦CA-44
   - 🇨🇦CA-45
@@ -2754,65 +2877,57 @@ proxy-groups:
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
-  - 🇨🇦CA-51
-  - 🇷🇺RU-10
   - 🇨🇦CA-52
-  - 🇺🇸US-32
+  - 🇨🇦CA-53
+  - 🇨🇦CA-54
+  - 🇨🇦CA-55
+  - 🇷🇺RU-10
+  - 🇨🇦CA-56
+  - 🇺🇸US-37
   - 🇭🇰HK-15
-  - 🇸🇬SG-05
-  - 🇺🇸US-33
-  - 🇺🇸US-34
-  - 🇺🇸US-35
-  - 🇩🇪DE-08
+  - 🇸🇬SG-07
+  - 🇺🇸US-38
+  - 🇺🇸US-39
+  - 🇺🇸US-40
   - 🇩🇪DE-09
+  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
-  - 🇽🇽XX-14
-  - 🇯🇵JP-05
+  - 🇯🇵JP-07
   - 🇧🇬BG-01
   - 🇰🇷KR-03
-  - 🇫🇷FR-03
-  - 🇺🇸US-36
-  - 🇳🇱NL-06
   - 🇷🇺RU-11
-  - 🇺🇸US-37
-  - 🇺🇸US-38
-  - 🇺🇸US-39
-  - 🇵🇱PL-03
-  - 🇫🇷FR-04
-  - 🇨🇦CA-53
-  - 🇹🇼TW-02
-  - 🇩🇪DE-10
-  - 🇺🇸US-40
-  - 🇩🇪DE-11
-  - 🇫🇷FR-05
-  - 🇺🇸US-42
-  - 🇸🇪SE-03
-  - 🇺🇸US-45
-  - 🇫🇷FR-06
-  - 🇺🇸US-46
-  - 🇺🇸US-47
-  - 🇭🇰HK-18
+  - 🇫🇷FR-03
+  - 🇺🇸US-41
   - 🇷🇺RU-12
-  - 🇳🇱NL-08
-  - 🇰🇷KR-04
-  - 🇺🇸US-48
-  - 🇰🇷KR-05
-  - 🇺🇸US-49
+  - 🇳🇱NL-06
+  - 🇷🇺RU-13
+  - 🇺🇸US-42
+  - 🇺🇸US-43
+  - 🇺🇸US-44
+  - 🇫🇷FR-04
+  - 🇨🇦CA-57
+  - 🇹🇼TW-02
+  - 🇩🇪DE-11
+  - 🇺🇸US-45
+  - 🇫🇷FR-05
+  - 🇺🇸US-47
+  - 🇸🇪SE-03
   - 🇺🇸US-50
+  - 🇫🇷FR-06
   - 🇺🇸US-51
-  - 🇸🇬SG-06
-  - 🇫🇷FR-07
-  - 🇰🇿KZ-01
-  - 🇫🇮FI-03
-  - 🇽🇽XX-15
-  - 🇸🇬SG-07
-  - 🇬🇧GB-03
-  - 🇪🇸ES-06
-  - 🇱🇹LT-01
-  - 🇯🇵JP-07
-  - 🇺🇦UA-01
+  - 🇺🇸US-52
+  - 🇭🇰HK-18
+  - 🇷🇺RU-14
+  - 🇳🇱NL-08
+  - 🇳🇱NL-09
+  - 🇰🇷KR-04
+  - 🇺🇸US-53
+  - 🇰🇷KR-05
+  - 🇺🇸US-54
+  - 🇺🇸US-55
+  - 🇺🇸US-56
 - name: ♻️ 自动选择
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -2857,101 +2972,109 @@ proxy-groups:
   - 🇷🇺RU-04
   - 🇦🇪AE-02
   - 🇨🇦CA-06
-  - 🇽🇽XX-11
-  - 🇽🇽XX-12
-  - 🇽🇽XX-13
   - 🇨🇦CA-07
-  - 🇨🇦CA-08
+  - 🇽🇽XX-11
   - 🇩🇪DE-01
-  - 🇪🇸ES-01
-  - 🇨🇦CA-09
+  - 🇨🇦CA-08
+  - 🇯🇵JP-02
+  - 🇯🇵JP-03
+  - 🇸🇬SG-01
+  - 🇺🇸US-08
+  - 🇺🇸US-09
+  - 🇸🇬SG-02
+  - 🇺🇸US-10
+  - 🇺🇸US-11
+  - 🇺🇸US-12
   - 🇨🇦CA-10
   - 🇨🇦CA-11
   - 🇨🇦CA-12
+  - 🇩🇪DE-02
+  - 🇪🇸ES-01
+  - 🇨🇦CA-13
+  - 🇨🇦CA-14
+  - 🇨🇦CA-15
   - 🇨🇦CA-16
-  - 🇳🇱NL-02
-  - 🇺🇸US-08
-  - 🇨🇦CA-18
-  - 🇺🇸US-09
-  - 🇨🇦CA-19
-  - 🇺🇸US-10
   - 🇨🇦CA-20
-  - 🇨🇦CA-21
+  - 🇳🇱NL-02
+  - 🇺🇸US-13
   - 🇨🇦CA-22
+  - 🇺🇸US-14
   - 🇨🇦CA-23
+  - 🇺🇸US-15
   - 🇨🇦CA-24
+  - 🇨🇦CA-25
+  - 🇨🇦CA-26
+  - 🇨🇦CA-27
+  - 🇨🇦CA-28
   - 🇹🇭TH-01
   - 🇰🇷KR-01
-  - 🇸🇬SG-01
-  - 🇺🇸US-11
-  - 🇺🇸US-12
-  - 🇩🇪DE-02
-  - 🇺🇸US-13
-  - 🇯🇵JP-02
-  - 🇨🇦CA-25
-  - 🇮🇷IR-02
-  - 🇺🇸US-14
-  - 🇨🇦CA-26
-  - 🇺🇸US-15
-  - 🇧🇿BZ-01
+  - 🇸🇬SG-03
+  - 🇺🇸US-16
+  - 🇺🇸US-17
   - 🇩🇪DE-03
-  - 🇲🇩MD-01
-  - 🇯🇵JP-03
-  - 🇺🇸US-19
-  - 🇸🇪SE-01
+  - 🇺🇸US-18
+  - 🇯🇵JP-04
   - 🇨🇦CA-29
-  - 🇸🇬SG-02
+  - 🇮🇷IR-02
+  - 🇺🇸US-19
   - 🇨🇦CA-30
-  - 🇨🇦CA-31
-  - 🇨🇦CA-32
-  - 🇪🇸ES-02
-  - 🇺🇸US-21
-  - 🇮🇷IR-03
-  - 🇸🇪SE-02
+  - 🇺🇸US-20
+  - 🇧🇿BZ-01
+  - 🇩🇪DE-04
+  - 🇲🇩MD-01
+  - 🇯🇵JP-05
+  - 🇺🇸US-24
+  - 🇸🇪SE-01
   - 🇨🇦CA-33
+  - 🇸🇬SG-04
+  - 🇨🇦CA-34
+  - 🇨🇦CA-35
+  - 🇨🇦CA-36
+  - 🇪🇸ES-02
+  - 🇩🇪DE-06
+  - 🇺🇸US-26
+  - 🇮🇷IR-03
+  - 🇺🇸US-27
+  - 🇸🇪SE-02
+  - 🇨🇦CA-37
   - 🇮🇷IR-04
   - 🇳🇱NL-03
   - 🇰🇷KR-02
   - 🇫🇮FI-02
   - 🇭🇰HK-12
-  - 🇨🇦CA-34
+  - 🇨🇦CA-38
   - 🇮🇪IE-01
   - 🇳🇪NE-01
-  - 🇺🇸US-22
-  - 🇺🇸US-23
+  - 🇺🇸US-28
+  - 🇨🇷CR-01
   - 🇱🇾LY-01
   - 🇫🇷FR-01
-  - 🇨🇦CA-35
+  - 🇨🇦CA-39
   - 🇭🇰HK-13
   - 🇲🇾MY-01
   - 🇪🇪EE-03
-  - 🇨🇦CA-36
+  - 🇨🇦CA-40
   - 🇳🇱NL-04
-  - 🇺🇸US-25
-  - 🇺🇸US-26
-  - 🇺🇸US-27
-  - 🇨🇦CA-37
-  - 🇨🇾CY-01
-  - 🇺🇸US-29
-  - 🇩🇴DO-01
-  - 🇨🇦CA-38
   - 🇺🇸US-30
+  - 🇺🇸US-31
+  - 🇺🇸US-32
+  - 🇨🇦CA-41
+  - 🇨🇾CY-01
+  - 🇺🇸US-34
+  - 🇩🇴DO-01
+  - 🇨🇦CA-42
+  - 🇺🇸US-35
   - 🇬🇪GE-01
-  - 🇯🇵JP-04
-  - 🇸🇬SG-03
-  - 🇸🇬SG-04
+  - 🇯🇵JP-06
+  - 🇸🇬SG-05
+  - 🇸🇬SG-06
   - 🇷🇺RU-05
   - 🇳🇱NL-05
   - 🇮🇳IN-01
   - 🇭🇰HK-14
   - 🇵🇱PL-02
-  - 🇩🇪DE-05
-  - 🇩🇪DE-06
   - 🇩🇪DE-07
-  - 🇨🇦CA-39
-  - 🇨🇦CA-40
-  - 🇨🇦CA-41
-  - 🇨🇦CA-42
+  - 🇩🇪DE-08
   - 🇨🇦CA-43
   - 🇨🇦CA-44
   - 🇨🇦CA-45
@@ -2960,65 +3083,57 @@ proxy-groups:
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
-  - 🇨🇦CA-51
-  - 🇷🇺RU-10
   - 🇨🇦CA-52
-  - 🇺🇸US-32
+  - 🇨🇦CA-53
+  - 🇨🇦CA-54
+  - 🇨🇦CA-55
+  - 🇷🇺RU-10
+  - 🇨🇦CA-56
+  - 🇺🇸US-37
   - 🇭🇰HK-15
-  - 🇸🇬SG-05
-  - 🇺🇸US-33
-  - 🇺🇸US-34
-  - 🇺🇸US-35
-  - 🇩🇪DE-08
+  - 🇸🇬SG-07
+  - 🇺🇸US-38
+  - 🇺🇸US-39
+  - 🇺🇸US-40
   - 🇩🇪DE-09
+  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
-  - 🇽🇽XX-14
-  - 🇯🇵JP-05
+  - 🇯🇵JP-07
   - 🇧🇬BG-01
   - 🇰🇷KR-03
-  - 🇫🇷FR-03
-  - 🇺🇸US-36
-  - 🇳🇱NL-06
   - 🇷🇺RU-11
-  - 🇺🇸US-37
-  - 🇺🇸US-38
-  - 🇺🇸US-39
-  - 🇵🇱PL-03
-  - 🇫🇷FR-04
-  - 🇨🇦CA-53
-  - 🇹🇼TW-02
-  - 🇩🇪DE-10
-  - 🇺🇸US-40
-  - 🇩🇪DE-11
-  - 🇫🇷FR-05
-  - 🇺🇸US-42
-  - 🇸🇪SE-03
-  - 🇺🇸US-45
-  - 🇫🇷FR-06
-  - 🇺🇸US-46
-  - 🇺🇸US-47
-  - 🇭🇰HK-18
+  - 🇫🇷FR-03
+  - 🇺🇸US-41
   - 🇷🇺RU-12
-  - 🇳🇱NL-08
-  - 🇰🇷KR-04
-  - 🇺🇸US-48
-  - 🇰🇷KR-05
-  - 🇺🇸US-49
+  - 🇳🇱NL-06
+  - 🇷🇺RU-13
+  - 🇺🇸US-42
+  - 🇺🇸US-43
+  - 🇺🇸US-44
+  - 🇫🇷FR-04
+  - 🇨🇦CA-57
+  - 🇹🇼TW-02
+  - 🇩🇪DE-11
+  - 🇺🇸US-45
+  - 🇫🇷FR-05
+  - 🇺🇸US-47
+  - 🇸🇪SE-03
   - 🇺🇸US-50
+  - 🇫🇷FR-06
   - 🇺🇸US-51
-  - 🇸🇬SG-06
-  - 🇫🇷FR-07
-  - 🇰🇿KZ-01
-  - 🇫🇮FI-03
-  - 🇽🇽XX-15
-  - 🇸🇬SG-07
-  - 🇬🇧GB-03
-  - 🇪🇸ES-06
-  - 🇱🇹LT-01
-  - 🇯🇵JP-07
-  - 🇺🇦UA-01
+  - 🇺🇸US-52
+  - 🇭🇰HK-18
+  - 🇷🇺RU-14
+  - 🇳🇱NL-08
+  - 🇳🇱NL-09
+  - 🇰🇷KR-04
+  - 🇺🇸US-53
+  - 🇰🇷KR-05
+  - 🇺🇸US-54
+  - 🇺🇸US-55
+  - 🇺🇸US-56
 - name: 🎬 视频
   type: select
   proxies:
@@ -3048,119 +3163,120 @@ proxy-groups:
   - 🇷🇺RU-04
   - 🇦🇪AE-02
   - 🇽🇽XX-11
-  - 🇽🇽XX-12
-  - 🇽🇽XX-13
-  - 🇨🇦CA-07
-  - 🇨🇦CA-08
-  - 🇪🇸ES-01
-  - 🇨🇦CA-09
-  - 🇨🇦CA-10
-  - 🇨🇦CA-11
-  - 🇳🇱NL-02
-  - 🇺🇸US-08
-  - 🇨🇦CA-18
-  - 🇺🇸US-09
-  - 🇺🇸US-10
-  - 🇨🇦CA-20
-  - 🇨🇦CA-21
-  - 🇨🇦CA-22
-  - 🇨🇦CA-23
-  - 🇨🇦CA-24
-  - 🇹🇭TH-01
-  - 🇺🇸US-11
-  - 🇺🇸US-12
-  - 🇩🇪DE-02
-  - 🇺🇸US-13
   - 🇯🇵JP-02
-  - 🇨🇦CA-25
-  - 🇮🇷IR-02
-  - 🇺🇸US-14
-  - 🇨🇦CA-26
-  - 🇺🇸US-15
-  - 🇧🇿BZ-01
-  - 🇩🇪DE-03
-  - 🇲🇩MD-01
   - 🇯🇵JP-03
-  - 🇺🇸US-19
-  - 🇸🇪SE-01
-  - 🇨🇦CA-29
+  - 🇸🇬SG-01
+  - 🇺🇸US-08
+  - 🇺🇸US-09
   - 🇸🇬SG-02
+  - 🇺🇸US-10
+  - 🇺🇸US-11
+  - 🇨🇦CA-12
+  - 🇪🇸ES-01
+  - 🇨🇦CA-13
+  - 🇨🇦CA-14
+  - 🇨🇦CA-15
+  - 🇳🇱NL-02
+  - 🇺🇸US-13
+  - 🇨🇦CA-22
+  - 🇺🇸US-14
+  - 🇺🇸US-15
+  - 🇨🇦CA-24
+  - 🇨🇦CA-25
+  - 🇨🇦CA-26
+  - 🇨🇦CA-27
+  - 🇨🇦CA-28
+  - 🇹🇭TH-01
+  - 🇺🇸US-16
+  - 🇺🇸US-17
+  - 🇩🇪DE-03
+  - 🇺🇸US-18
+  - 🇯🇵JP-04
+  - 🇨🇦CA-29
+  - 🇮🇷IR-02
+  - 🇺🇸US-19
   - 🇨🇦CA-30
-  - 🇨🇦CA-31
-  - 🇪🇸ES-02
-  - 🇺🇸US-21
-  - 🇮🇷IR-03
-  - 🇸🇪SE-02
+  - 🇺🇸US-20
+  - 🇧🇿BZ-01
+  - 🇩🇪DE-04
+  - 🇲🇩MD-01
+  - 🇯🇵JP-05
+  - 🇺🇸US-24
+  - 🇸🇪SE-01
   - 🇨🇦CA-33
+  - 🇸🇬SG-04
+  - 🇨🇦CA-34
+  - 🇨🇦CA-35
+  - 🇪🇸ES-02
+  - 🇺🇸US-26
+  - 🇮🇷IR-03
+  - 🇺🇸US-27
+  - 🇸🇪SE-02
+  - 🇨🇦CA-37
   - 🇮🇷IR-04
   - 🇳🇱NL-03
   - 🇫🇮FI-02
-  - 🇨🇦CA-34
+  - 🇨🇦CA-38
   - 🇮🇪IE-01
   - 🇳🇪NE-01
-  - 🇺🇸US-22
-  - 🇺🇸US-23
+  - 🇺🇸US-28
+  - 🇨🇷CR-01
   - 🇱🇾LY-01
   - 🇫🇷FR-01
-  - 🇨🇦CA-35
+  - 🇨🇦CA-39
   - 🇭🇰HK-13
   - 🇲🇾MY-01
   - 🇪🇪EE-03
   - 🇳🇱NL-04
-  - 🇺🇸US-25
-  - 🇺🇸US-27
-  - 🇨🇦CA-37
+  - 🇺🇸US-30
+  - 🇺🇸US-32
+  - 🇨🇦CA-41
   - 🇩🇴DO-01
-  - 🇨🇦CA-38
-  - 🇯🇵JP-04
+  - 🇨🇦CA-42
+  - 🇯🇵JP-06
   - 🇷🇺RU-05
   - 🇳🇱NL-05
   - 🇮🇳IN-01
   - 🇭🇰HK-14
-  - 🇩🇪DE-06
-  - 🇨🇦CA-39
-  - 🇨🇦CA-40
-  - 🇨🇦CA-41
-  - 🇨🇦CA-42
+  - 🇩🇪DE-07
   - 🇨🇦CA-43
   - 🇨🇦CA-44
   - 🇨🇦CA-45
+  - 🇨🇦CA-46
   - 🇨🇦CA-47
+  - 🇨🇦CA-48
   - 🇨🇦CA-49
-  - 🇨🇦CA-50
-  - 🇨🇦CA-51
+  - 🇨🇦CA-53
+  - 🇨🇦CA-54
+  - 🇨🇦CA-55
   - 🇷🇺RU-10
-  - 🇨🇦CA-52
+  - 🇨🇦CA-56
   - 🇭🇰HK-15
-  - 🇸🇬SG-05
-  - 🇺🇸US-34
-  - 🇩🇪DE-08
+  - 🇸🇬SG-07
+  - 🇺🇸US-39
   - 🇩🇪DE-09
+  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
-  - 🇽🇽XX-14
-  - 🇯🇵JP-05
+  - 🇯🇵JP-07
   - 🇰🇷KR-03
   - 🇷🇺RU-11
-  - 🇺🇸US-37
-  - 🇨🇦CA-53
+  - 🇷🇺RU-12
+  - 🇷🇺RU-13
+  - 🇺🇸US-42
+  - 🇨🇦CA-57
   - 🇹🇼TW-02
-  - 🇩🇪DE-10
   - 🇩🇪DE-11
   - 🇸🇪SE-03
   - 🇫🇷FR-06
-  - 🇺🇸US-47
-  - 🇷🇺RU-12
+  - 🇺🇸US-52
+  - 🇷🇺RU-14
   - 🇳🇱NL-08
+  - 🇳🇱NL-09
   - 🇰🇷KR-04
   - 🇰🇷KR-05
-  - 🇺🇸US-51
-  - 🇫🇷FR-07
-  - 🇰🇿KZ-01
-  - 🇽🇽XX-15
-  - 🇯🇵JP-07
-  - 🇺🇦UA-01
+  - 🇺🇸US-56
 - name: 🇨🇦 加拿大
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3175,24 +3291,23 @@ proxy-groups:
   - 🇨🇦CA-06
   - 🇨🇦CA-07
   - 🇨🇦CA-08
-  - 🇨🇦CA-09
   - 🇨🇦CA-10
   - 🇨🇦CA-11
   - 🇨🇦CA-12
+  - 🇨🇦CA-13
+  - 🇨🇦CA-14
+  - 🇨🇦CA-15
   - 🇨🇦CA-16
-  - 🇨🇦CA-18
-  - 🇨🇦CA-19
   - 🇨🇦CA-20
-  - 🇨🇦CA-21
   - 🇨🇦CA-22
   - 🇨🇦CA-23
   - 🇨🇦CA-24
   - 🇨🇦CA-25
   - 🇨🇦CA-26
+  - 🇨🇦CA-27
+  - 🇨🇦CA-28
   - 🇨🇦CA-29
   - 🇨🇦CA-30
-  - 🇨🇦CA-31
-  - 🇨🇦CA-32
   - 🇨🇦CA-33
   - 🇨🇦CA-34
   - 🇨🇦CA-35
@@ -3211,9 +3326,12 @@ proxy-groups:
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
-  - 🇨🇦CA-51
   - 🇨🇦CA-52
   - 🇨🇦CA-53
+  - 🇨🇦CA-54
+  - 🇨🇦CA-55
+  - 🇨🇦CA-56
+  - 🇨🇦CA-57
 - name: 🇺🇸 美国
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3233,32 +3351,37 @@ proxy-groups:
   - 🇺🇸US-13
   - 🇺🇸US-14
   - 🇺🇸US-15
+  - 🇺🇸US-16
+  - 🇺🇸US-17
+  - 🇺🇸US-18
   - 🇺🇸US-19
-  - 🇺🇸US-21
-  - 🇺🇸US-22
-  - 🇺🇸US-23
-  - 🇺🇸US-25
+  - 🇺🇸US-20
+  - 🇺🇸US-24
   - 🇺🇸US-26
   - 🇺🇸US-27
-  - 🇺🇸US-29
+  - 🇺🇸US-28
   - 🇺🇸US-30
+  - 🇺🇸US-31
   - 🇺🇸US-32
-  - 🇺🇸US-33
   - 🇺🇸US-34
   - 🇺🇸US-35
-  - 🇺🇸US-36
   - 🇺🇸US-37
   - 🇺🇸US-38
   - 🇺🇸US-39
   - 🇺🇸US-40
+  - 🇺🇸US-41
   - 🇺🇸US-42
+  - 🇺🇸US-43
+  - 🇺🇸US-44
   - 🇺🇸US-45
-  - 🇺🇸US-46
   - 🇺🇸US-47
-  - 🇺🇸US-48
-  - 🇺🇸US-49
   - 🇺🇸US-50
   - 🇺🇸US-51
+  - 🇺🇸US-52
+  - 🇺🇸US-53
+  - 🇺🇸US-54
+  - 🇺🇸US-55
+  - 🇺🇸US-56
 - name: 🇭🇰 香港
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3277,37 +3400,6 @@ proxy-groups:
   - 🇭🇰HK-14
   - 🇭🇰HK-15
   - 🇭🇰HK-18
-- name: 🇩🇪 德国
-  type: url-test
-  url: https://www.youtube.com/generate_204
-  interval: 300
-  tolerance: 50
-  proxies:
-  - 🇩🇪DE-01
-  - 🇩🇪DE-02
-  - 🇩🇪DE-03
-  - 🇩🇪DE-05
-  - 🇩🇪DE-06
-  - 🇩🇪DE-07
-  - 🇩🇪DE-08
-  - 🇩🇪DE-09
-  - 🇩🇪DE-10
-  - 🇩🇪DE-11
-- name: 🇽🇽 XX
-  type: url-test
-  url: https://www.youtube.com/generate_204
-  interval: 300
-  tolerance: 50
-  proxies:
-  - 🇽🇽XX-01
-  - 🇽🇽XX-07
-  - 🇽🇽XX-09
-  - 🇽🇽XX-10
-  - 🇽🇽XX-11
-  - 🇽🇽XX-12
-  - 🇽🇽XX-13
-  - 🇽🇽XX-14
-  - 🇽🇽XX-15
 - name: 🇷🇺 俄罗斯
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3322,6 +3414,24 @@ proxy-groups:
   - 🇷🇺RU-10
   - 🇷🇺RU-11
   - 🇷🇺RU-12
+  - 🇷🇺RU-13
+  - 🇷🇺RU-14
+- name: 🇩🇪 德国
+  type: url-test
+  url: https://www.youtube.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇩🇪DE-01
+  - 🇩🇪DE-02
+  - 🇩🇪DE-03
+  - 🇩🇪DE-04
+  - 🇩🇪DE-06
+  - 🇩🇪DE-07
+  - 🇩🇪DE-08
+  - 🇩🇪DE-09
+  - 🇩🇪DE-10
+  - 🇩🇪DE-11
 - name: 🇳🇱 荷兰
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3335,6 +3445,20 @@ proxy-groups:
   - 🇳🇱NL-05
   - 🇳🇱NL-06
   - 🇳🇱NL-08
+  - 🇳🇱NL-09
+- name: 🇯🇵 日本
+  type: url-test
+  url: https://www.youtube.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇯🇵JP-01
+  - 🇯🇵JP-02
+  - 🇯🇵JP-03
+  - 🇯🇵JP-04
+  - 🇯🇵JP-05
+  - 🇯🇵JP-06
+  - 🇯🇵JP-07
 - name: 🇸🇬 新加坡
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3348,29 +3472,27 @@ proxy-groups:
   - 🇸🇬SG-05
   - 🇸🇬SG-06
   - 🇸🇬SG-07
-- name: 🇯🇵 日本
+- name: 🇽🇽 XX
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇯🇵JP-01
-  - 🇯🇵JP-02
-  - 🇯🇵JP-03
-  - 🇯🇵JP-04
-  - 🇯🇵JP-05
-  - 🇯🇵JP-07
-- name: 🇫🇷 法国
+  - 🇽🇽XX-01
+  - 🇽🇽XX-07
+  - 🇽🇽XX-09
+  - 🇽🇽XX-10
+  - 🇽🇽XX-11
+- name: 🇰🇷 韩国
   type: url-test
   url: https://www.youtube.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇫🇷FR-01
-  - 🇫🇷FR-03
-  - 🇫🇷FR-04
-  - 🇫🇷FR-05
-  - 🇫🇷FR-06
-  - 🇫🇷FR-07
+  - 🇰🇷KR-01
+  - 🇰🇷KR-02
+  - 🇰🇷KR-03
+  - 🇰🇷KR-04
+  - 🇰🇷KR-05
 rules:
 - MATCH,🚀 节点选择
