@@ -251,7 +251,7 @@
     "type": "hysteria2",
     "server": "starlink-ft.251313.xyz",
     "port": 443,
-    "server_ip": "165.1.76.229",
+    "server_ip": "163.192.13.25",
     "country": "US",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -433,7 +433,7 @@
     "type": "vless",
     "server": "de15.h1cloud.net",
     "port": 25362,
-    "server_ip": "132.243.66.67",
+    "server_ip": "212.87.190.244",
     "country": "EE",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -472,7 +472,7 @@
     "type": "hysteria2",
     "server": "uk-tube-01.stre4m.net",
     "port": 13337,
-    "server_ip": "128.254.186.38",
+    "server_ip": "128.254.186.82",
     "country": "AE",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -732,7 +732,7 @@
     "type": "vless",
     "server": "yx.cloudflare.182682.xyz",
     "port": 443,
-    "server_ip": "104.17.230.208",
+    "server_ip": "172.64.148.248",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -810,7 +810,7 @@
     "type": "vless",
     "server": "frfx.pafaktalaei.ir",
     "port": 443,
-    "server_ip": "151.101.41.242",
+    "server_ip": "151.101.161.242",
     "country": "US",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -849,7 +849,7 @@
     "type": "trojan",
     "server": "www.ignitelimit.com",
     "port": 443,
-    "server_ip": "104.18.22.63",
+    "server_ip": "104.18.23.63",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -966,7 +966,7 @@
     "type": "vmess",
     "server": "cindy50.ceoiii.com",
     "port": 36801,
-    "server_ip": "172.104.191.212",
+    "server_ip": "172.104.191.222",
     "country": "SG",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -1239,7 +1239,7 @@
     "type": "vmess",
     "server": "hk2.998998.best",
     "port": 443,
-    "server_ip": "172.64.146.116",
+    "server_ip": "172.64.152.7",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -1278,7 +1278,7 @@
     "type": "vless",
     "server": "api.ferrin.uk",
     "port": 443,
-    "server_ip": "196.240.4.16",
+    "server_ip": "196.240.4.17",
     "country": "US",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -1369,7 +1369,7 @@
     "type": "vmess",
     "server": "dp8yk.xiaoyan.io",
     "port": 16616,
-    "server_ip": "3.38.109.169",
+    "server_ip": "15.165.50.128",
     "country": "KR",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -1499,7 +1499,7 @@
     "type": "vless",
     "server": "saas.sin.fan",
     "port": 443,
-    "server_ip": "162.159.130.234",
+    "server_ip": "162.159.135.234",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -1807,12 +1807,12 @@
     "has_raw_link": true
   },
   {
-    "name": "🇩🇪DE-07",
+    "name": "🇺🇸US-37",
     "type": "vless",
     "server": "8a2e72t.nl20.h1clayd.shop",
     "port": 443,
-    "server_ip": "153.52.85.149",
-    "country": "DE",
+    "server_ip": "48.103.230.88",
+    "country": "US",
     "delay_ms": 1,
     "speed_kbps": 0,
     "proto_score": null,
@@ -1820,7 +1820,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇩🇪DE-08",
+    "name": "🇩🇪DE-07",
     "type": "trojan",
     "server": "164.92.228.56",
     "port": 443,
@@ -1859,24 +1859,11 @@
     "has_raw_link": true
   },
   {
-    "name": "🇨🇦CA-45",
-    "type": "vless",
-    "server": "172.64.152.19",
-    "port": 443,
-    "server_ip": "172.64.152.19",
-    "country": "CA",
-    "delay_ms": 1,
-    "speed_kbps": 0,
-    "proto_score": null,
-    "source": "Barabama-merged",
-    "has_raw_link": true
-  },
-  {
     "name": "🇨🇦CA-46",
     "type": "vless",
     "server": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
     "port": 443,
-    "server_ip": "172.66.47.132",
+    "server_ip": "172.66.44.124",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -1889,7 +1876,7 @@
     "type": "vless",
     "server": "fu.baiproxy.us.ci",
     "port": 2087,
-    "server_ip": "172.67.129.113",
+    "server_ip": "104.21.1.150",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -1937,6 +1924,19 @@
     "has_raw_link": true
   },
   {
+    "name": "🇨🇦CA-51",
+    "type": "vless",
+    "server": "172.66.47.202",
+    "port": 443,
+    "server_ip": "172.66.47.202",
+    "country": "CA",
+    "delay_ms": 1,
+    "speed_kbps": 0,
+    "proto_score": null,
+    "source": "Barabama-merged",
+    "has_raw_link": true
+  },
+  {
     "name": "🇨🇦CA-52",
     "type": "trojan",
     "server": "104.17.22.231",
@@ -1976,19 +1976,6 @@
     "has_raw_link": true
   },
   {
-    "name": "🇨🇦CA-55",
-    "type": "vless",
-    "server": "cdn.8211992.xyz",
-    "port": 443,
-    "server_ip": "172.66.173.27",
-    "country": "CA",
-    "delay_ms": 1,
-    "speed_kbps": 0,
-    "proto_score": null,
-    "source": "Barabama-merged",
-    "has_raw_link": true
-  },
-  {
     "name": "🇷🇺RU-10",
     "type": "vless",
     "server": "9030b9g.pl10.h1clayd.shop",
@@ -2006,7 +1993,7 @@
     "type": "vless",
     "server": "ws.liuzedong.ltd",
     "port": 443,
-    "server_ip": "172.67.155.153",
+    "server_ip": "104.21.80.241",
     "country": "CA",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -2015,7 +2002,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-37",
+    "name": "🇺🇸US-38",
     "type": "vmess",
     "server": "38.91.106.182",
     "port": 1270,
@@ -2054,7 +2041,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-38",
+    "name": "🇺🇸US-39",
     "type": "ss",
     "server": "15.204.246.108",
     "port": 8881,
@@ -2067,7 +2054,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-39",
+    "name": "🇺🇸US-40",
     "type": "vless",
     "server": "15.204.97.214",
     "port": 23576,
@@ -2080,7 +2067,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-40",
+    "name": "🇺🇸US-41",
     "type": "ss",
     "server": "38.22.17.129",
     "port": 19999,
@@ -2093,7 +2080,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇩🇪DE-09",
+    "name": "🇩🇪DE-08",
     "type": "vless",
     "server": "194.156.26.28",
     "port": 443,
@@ -2106,7 +2093,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇩🇪DE-10",
+    "name": "🇩🇪DE-09",
     "type": "vless",
     "server": "185.255.115.181",
     "port": 443,
@@ -2223,7 +2210,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-41",
+    "name": "🇺🇸US-42",
     "type": "vmess",
     "server": "67.220.85.46",
     "port": 18000,
@@ -2275,7 +2262,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-42",
+    "name": "🇺🇸US-43",
     "type": "vless",
     "server": "169.40.42.90",
     "port": 443,
@@ -2288,7 +2275,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-43",
+    "name": "🇺🇸US-44",
     "type": "vmess",
     "server": "38.64.138.135",
     "port": 1270,
@@ -2301,7 +2288,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-44",
+    "name": "🇺🇸US-45",
     "type": "vmess",
     "server": "84.17.41.2",
     "port": 18000,
@@ -2353,7 +2340,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇩🇪DE-11",
+    "name": "🇩🇪DE-10",
     "type": "vless",
     "server": "146.103.43.8",
     "port": 9543,
@@ -2366,7 +2353,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-45",
+    "name": "🇺🇸US-46",
     "type": "vmess",
     "server": "172.111.36.123",
     "port": 1270,
@@ -2392,7 +2379,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-47",
+    "name": "🇺🇸US-48",
     "type": "trojan",
     "server": "66.163.122.7",
     "port": 443,
@@ -2418,7 +2405,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-50",
+    "name": "🇺🇸US-51",
     "type": "ss",
     "server": "193.151.160.9",
     "port": 19999,
@@ -2444,7 +2431,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-51",
+    "name": "🇺🇸US-52",
     "type": "trojan",
     "server": "216.152.155.131",
     "port": 443,
@@ -2457,7 +2444,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-52",
+    "name": "🇺🇸US-53",
     "type": "vless",
     "server": "45.138.100.248",
     "port": 14430,
@@ -2474,7 +2461,7 @@
     "type": "vmess",
     "server": "dog-hk.kunlun01dns.com",
     "port": 21019,
-    "server_ip": "43.198.209.166",
+    "server_ip": "95.40.2.147",
     "country": "HK",
     "delay_ms": 1,
     "speed_kbps": 0,
@@ -2535,7 +2522,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-53",
+    "name": "🇺🇸US-54",
     "type": "vmess",
     "server": "38.91.107.49",
     "port": 18000,
@@ -2561,7 +2548,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-54",
+    "name": "🇺🇸US-55",
     "type": "ss",
     "server": "79.110.54.250",
     "port": 8080,
@@ -2574,7 +2561,7 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-55",
+    "name": "🇺🇸US-56",
     "type": "vmess",
     "server": "162.251.60.97",
     "port": 1270,
@@ -2587,12 +2574,25 @@
     "has_raw_link": true
   },
   {
-    "name": "🇺🇸US-56",
+    "name": "🇺🇸US-57",
     "type": "hysteria2",
     "server": "38.76.150.108",
     "port": 36712,
     "server_ip": "38.76.150.108",
     "country": "US",
+    "delay_ms": 1,
+    "speed_kbps": 0,
+    "proto_score": null,
+    "source": "Barabama-merged",
+    "has_raw_link": true
+  },
+  {
+    "name": "🇸🇬SG-08",
+    "type": "ss",
+    "server": "149.88.106.73",
+    "port": 19999,
+    "server_ip": "149.88.106.73",
+    "country": "SG",
     "delay_ms": 1,
     "speed_kbps": 0,
     "proto_score": null,

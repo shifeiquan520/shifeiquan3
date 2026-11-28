@@ -1,5 +1,5 @@
 # free-nodes subscription (auto generated)
-# updated: 2026-11-27 21:06:57 UTC
+# updated: 2026-11-28 07:30:56 UTC
 # nodes: 200 (youtube reachable + real bandwidth tested)
 # usage: Clash / Clash Meta / Mihomo / Clash Verge / Stash
 # note: public free nodes, do NOT use for sensitive accounts or payments
@@ -2052,7 +2052,7 @@ proxies:
     short-id: 8d0d0679f42ffd98
   flow: xtls-rprx-vision
   client-fingerprint: random
-  name: 🇩🇪DE-07
+  name: 🇺🇸US-37
 - type: trojan
   server: 164.92.228.56
   port: 443
@@ -2065,7 +2065,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
     headers:
       Host: 666-4sd.pages.dev
-  name: 🇩🇪DE-08
+  name: 🇩🇪DE-07
 - type: vless
   server: 172.64.149.88
   port: 443
@@ -2098,21 +2098,6 @@ proxies:
   alpn:
   - h3
   name: 🇨🇦CA-44
-- type: vless
-  server: 172.64.152.19
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-  client-fingerprint: unsafe
-  name: 🇨🇦CA-45
 - type: vless
   server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   port: 443
@@ -2187,6 +2172,20 @@ proxies:
     headers:
       Host: 666-4sd.pages.dev
   name: 🇨🇦CA-50
+- type: vless
+  server: 172.66.47.202
+  port: 443
+  uuid: d8a2ffbb-1c44-4e83-8a62-5e5fe79cc42a
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: edgetunnel-pages-di9.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-pages-di9.pages.dev
+  name: 🇨🇦CA-51
 - type: trojan
   server: 104.17.22.231
   port: 443
@@ -2229,21 +2228,6 @@ proxies:
       Host: EDGETUNNEL-PAGES-DI9.PAGES.DEV
   name: 🇨🇦CA-54
 - type: vless
-  server: cdn.8211992.xyz
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: mao.kipfelmao.de5.net
-  network: ws
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
-  client-fingerprint: chrome
-  name: 🇨🇦CA-55
-- type: vless
   server: 9030b9g.pl10.h1clayd.shop
   port: 443
   uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
@@ -2281,7 +2265,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇺🇸US-37
+  name: 🇺🇸US-38
 - type: hysteria2
   server: 202.146.222.89
   port: 443
@@ -2309,7 +2293,7 @@ proxies:
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-  name: 🇺🇸US-38
+  name: 🇺🇸US-39
 - type: vless
   server: 15.204.97.214
   port: 23576
@@ -2323,14 +2307,14 @@ proxies:
     short-id: '01'
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇺🇸US-39
+  name: 🇺🇸US-40
 - type: ss
   server: 38.22.17.129
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: 🇺🇸US-40
+  name: 🇺🇸US-41
 - type: vless
   server: 194.156.26.28
   port: 443
@@ -2340,7 +2324,7 @@ proxies:
   tls: true
   servername: 145.baklajann.ru
   client-fingerprint: chrome
-  name: 🇩🇪DE-09
+  name: 🇩🇪DE-08
 - type: vless
   server: 185.255.115.181
   port: 443
@@ -2354,7 +2338,7 @@ proxies:
     short-id: 6976d670818644cc
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  name: 🇩🇪DE-10
+  name: 🇩🇪DE-09
 - type: hysteria2
   server: vpn-tw-002.fastervpn.world
   port: 443
@@ -2446,7 +2430,7 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-  name: 🇺🇸US-41
+  name: 🇺🇸US-42
 - type: vless
   server: 87.228.92.112
   port: 25135
@@ -2490,7 +2474,7 @@ proxies:
     short-id: c39cc7310a
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  name: 🇺🇸US-42
+  name: 🇺🇸US-43
 - type: vmess
   server: 38.64.138.135
   port: 1270
@@ -2501,7 +2485,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇺🇸US-43
+  name: 🇺🇸US-44
 - type: vmess
   server: 84.17.41.2
   port: 18000
@@ -2509,7 +2493,7 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-  name: 🇺🇸US-44
+  name: 🇺🇸US-45
 - type: ss
   server: 167.17.64.22
   port: 19999
@@ -2547,7 +2531,7 @@ proxies:
     short-id: 123abcdf
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  name: 🇩🇪DE-11
+  name: 🇩🇪DE-10
 - type: vmess
   server: 172.111.36.123
   port: 1270
@@ -2559,7 +2543,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: true
   client-fingerprint: chrome
-  name: 🇺🇸US-45
+  name: 🇺🇸US-46
 - type: vmess
   server: 172.99.189.239
   port: 1270
@@ -2578,7 +2562,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 66.163.122.7
-  name: 🇺🇸US-47
+  name: 🇺🇸US-48
 - type: vless
   server: 31.77.144.255
   port: 8444
@@ -2598,7 +2582,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: 🇺🇸US-50
+  name: 🇺🇸US-51
 - type: hysteria2
   server: 13.36.234.11
   port: 443
@@ -2613,7 +2597,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: ekb.eg
-  name: 🇺🇸US-51
+  name: 🇺🇸US-52
 - type: vless
   server: 45.138.100.248
   port: 14430
@@ -2626,7 +2610,7 @@ proxies:
     path: /vless
     headers:
       Host: 45.138.100.248
-  name: 🇺🇸US-52
+  name: 🇺🇸US-53
 - type: vmess
   server: dog-hk.kunlun01dns.com
   port: 21019
@@ -2689,7 +2673,7 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-  name: 🇺🇸US-53
+  name: 🇺🇸US-54
 - type: hysteria2
   server: 132.226.226.189
   port: 50160
@@ -2703,7 +2687,7 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
-  name: 🇺🇸US-54
+  name: 🇺🇸US-55
 - type: vmess
   server: 162.251.60.97
   port: 1270
@@ -2714,14 +2698,21 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-  name: 🇺🇸US-55
+  name: 🇺🇸US-56
 - type: hysteria2
   server: 38.76.150.108
   port: 36712
   password: AIcYjw5Oc9Rrrr9SGDUBbBIC
   skip-cert-verify: true
   sni: 38.76.150.108
-  name: 🇺🇸US-56
+  name: 🇺🇸US-57
+- type: ss
+  server: 149.88.106.73
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: 🇸🇬SG-08
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -2867,30 +2858,29 @@ proxy-groups:
   - 🇮🇳IN-01
   - 🇭🇰HK-14
   - 🇵🇱PL-02
+  - 🇺🇸US-37
   - 🇩🇪DE-07
-  - 🇩🇪DE-08
   - 🇨🇦CA-43
   - 🇨🇦CA-44
-  - 🇨🇦CA-45
   - 🇨🇦CA-46
   - 🇨🇦CA-47
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
+  - 🇨🇦CA-51
   - 🇨🇦CA-52
   - 🇨🇦CA-53
   - 🇨🇦CA-54
-  - 🇨🇦CA-55
   - 🇷🇺RU-10
   - 🇨🇦CA-56
-  - 🇺🇸US-37
+  - 🇺🇸US-38
   - 🇭🇰HK-15
   - 🇸🇬SG-07
-  - 🇺🇸US-38
   - 🇺🇸US-39
   - 🇺🇸US-40
+  - 🇺🇸US-41
+  - 🇩🇪DE-08
   - 🇩🇪DE-09
-  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
@@ -2899,35 +2889,36 @@ proxy-groups:
   - 🇰🇷KR-03
   - 🇷🇺RU-11
   - 🇫🇷FR-03
-  - 🇺🇸US-41
+  - 🇺🇸US-42
   - 🇷🇺RU-12
   - 🇳🇱NL-06
   - 🇷🇺RU-13
-  - 🇺🇸US-42
   - 🇺🇸US-43
   - 🇺🇸US-44
+  - 🇺🇸US-45
   - 🇫🇷FR-04
   - 🇨🇦CA-57
   - 🇹🇼TW-02
-  - 🇩🇪DE-11
-  - 🇺🇸US-45
+  - 🇩🇪DE-10
+  - 🇺🇸US-46
   - 🇫🇷FR-05
-  - 🇺🇸US-47
+  - 🇺🇸US-48
   - 🇸🇪SE-03
-  - 🇺🇸US-50
-  - 🇫🇷FR-06
   - 🇺🇸US-51
+  - 🇫🇷FR-06
   - 🇺🇸US-52
+  - 🇺🇸US-53
   - 🇭🇰HK-18
   - 🇷🇺RU-14
   - 🇳🇱NL-08
   - 🇳🇱NL-09
   - 🇰🇷KR-04
-  - 🇺🇸US-53
-  - 🇰🇷KR-05
   - 🇺🇸US-54
+  - 🇰🇷KR-05
   - 🇺🇸US-55
   - 🇺🇸US-56
+  - 🇺🇸US-57
+  - 🇸🇬SG-08
 - name: ♻️ 自动选择
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3073,30 +3064,29 @@ proxy-groups:
   - 🇮🇳IN-01
   - 🇭🇰HK-14
   - 🇵🇱PL-02
+  - 🇺🇸US-37
   - 🇩🇪DE-07
-  - 🇩🇪DE-08
   - 🇨🇦CA-43
   - 🇨🇦CA-44
-  - 🇨🇦CA-45
   - 🇨🇦CA-46
   - 🇨🇦CA-47
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
+  - 🇨🇦CA-51
   - 🇨🇦CA-52
   - 🇨🇦CA-53
   - 🇨🇦CA-54
-  - 🇨🇦CA-55
   - 🇷🇺RU-10
   - 🇨🇦CA-56
-  - 🇺🇸US-37
+  - 🇺🇸US-38
   - 🇭🇰HK-15
   - 🇸🇬SG-07
-  - 🇺🇸US-38
   - 🇺🇸US-39
   - 🇺🇸US-40
+  - 🇺🇸US-41
+  - 🇩🇪DE-08
   - 🇩🇪DE-09
-  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
@@ -3105,35 +3095,36 @@ proxy-groups:
   - 🇰🇷KR-03
   - 🇷🇺RU-11
   - 🇫🇷FR-03
-  - 🇺🇸US-41
+  - 🇺🇸US-42
   - 🇷🇺RU-12
   - 🇳🇱NL-06
   - 🇷🇺RU-13
-  - 🇺🇸US-42
   - 🇺🇸US-43
   - 🇺🇸US-44
+  - 🇺🇸US-45
   - 🇫🇷FR-04
   - 🇨🇦CA-57
   - 🇹🇼TW-02
-  - 🇩🇪DE-11
-  - 🇺🇸US-45
+  - 🇩🇪DE-10
+  - 🇺🇸US-46
   - 🇫🇷FR-05
-  - 🇺🇸US-47
+  - 🇺🇸US-48
   - 🇸🇪SE-03
-  - 🇺🇸US-50
-  - 🇫🇷FR-06
   - 🇺🇸US-51
+  - 🇫🇷FR-06
   - 🇺🇸US-52
+  - 🇺🇸US-53
   - 🇭🇰HK-18
   - 🇷🇺RU-14
   - 🇳🇱NL-08
   - 🇳🇱NL-09
   - 🇰🇷KR-04
-  - 🇺🇸US-53
-  - 🇰🇷KR-05
   - 🇺🇸US-54
+  - 🇰🇷KR-05
   - 🇺🇸US-55
   - 🇺🇸US-56
+  - 🇺🇸US-57
+  - 🇸🇬SG-08
 - name: 🎬 视频
   type: select
   proxies:
@@ -3238,24 +3229,23 @@ proxy-groups:
   - 🇳🇱NL-05
   - 🇮🇳IN-01
   - 🇭🇰HK-14
-  - 🇩🇪DE-07
+  - 🇺🇸US-37
   - 🇨🇦CA-43
   - 🇨🇦CA-44
-  - 🇨🇦CA-45
   - 🇨🇦CA-46
   - 🇨🇦CA-47
   - 🇨🇦CA-48
   - 🇨🇦CA-49
+  - 🇨🇦CA-51
   - 🇨🇦CA-53
   - 🇨🇦CA-54
-  - 🇨🇦CA-55
   - 🇷🇺RU-10
   - 🇨🇦CA-56
   - 🇭🇰HK-15
   - 🇸🇬SG-07
-  - 🇺🇸US-39
+  - 🇺🇸US-40
+  - 🇩🇪DE-08
   - 🇩🇪DE-09
-  - 🇩🇪DE-10
   - 🇹🇼TW-01
   - 🇪🇸ES-05
   - 🇻🇳VN-01
@@ -3264,19 +3254,19 @@ proxy-groups:
   - 🇷🇺RU-11
   - 🇷🇺RU-12
   - 🇷🇺RU-13
-  - 🇺🇸US-42
+  - 🇺🇸US-43
   - 🇨🇦CA-57
   - 🇹🇼TW-02
-  - 🇩🇪DE-11
+  - 🇩🇪DE-10
   - 🇸🇪SE-03
   - 🇫🇷FR-06
-  - 🇺🇸US-52
+  - 🇺🇸US-53
   - 🇷🇺RU-14
   - 🇳🇱NL-08
   - 🇳🇱NL-09
   - 🇰🇷KR-04
   - 🇰🇷KR-05
-  - 🇺🇸US-56
+  - 🇺🇸US-57
 - name: 🇨🇦 加拿大
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3320,16 +3310,15 @@ proxy-groups:
   - 🇨🇦CA-42
   - 🇨🇦CA-43
   - 🇨🇦CA-44
-  - 🇨🇦CA-45
   - 🇨🇦CA-46
   - 🇨🇦CA-47
   - 🇨🇦CA-48
   - 🇨🇦CA-49
   - 🇨🇦CA-50
+  - 🇨🇦CA-51
   - 🇨🇦CA-52
   - 🇨🇦CA-53
   - 🇨🇦CA-54
-  - 🇨🇦CA-55
   - 🇨🇦CA-56
   - 🇨🇦CA-57
 - name: 🇺🇸 美国
@@ -3374,14 +3363,15 @@ proxy-groups:
   - 🇺🇸US-43
   - 🇺🇸US-44
   - 🇺🇸US-45
-  - 🇺🇸US-47
-  - 🇺🇸US-50
+  - 🇺🇸US-46
+  - 🇺🇸US-48
   - 🇺🇸US-51
   - 🇺🇸US-52
   - 🇺🇸US-53
   - 🇺🇸US-54
   - 🇺🇸US-55
   - 🇺🇸US-56
+  - 🇺🇸US-57
 - name: 🇭🇰 香港
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3431,7 +3421,6 @@ proxy-groups:
   - 🇩🇪DE-08
   - 🇩🇪DE-09
   - 🇩🇪DE-10
-  - 🇩🇪DE-11
 - name: 🇳🇱 荷兰
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3446,19 +3435,6 @@ proxy-groups:
   - 🇳🇱NL-06
   - 🇳🇱NL-08
   - 🇳🇱NL-09
-- name: 🇯🇵 日本
-  type: url-test
-  url: https://www.youtube.com/generate_204
-  interval: 300
-  tolerance: 50
-  proxies:
-  - 🇯🇵JP-01
-  - 🇯🇵JP-02
-  - 🇯🇵JP-03
-  - 🇯🇵JP-04
-  - 🇯🇵JP-05
-  - 🇯🇵JP-06
-  - 🇯🇵JP-07
 - name: 🇸🇬 新加坡
   type: url-test
   url: https://www.youtube.com/generate_204
@@ -3472,6 +3448,20 @@ proxy-groups:
   - 🇸🇬SG-05
   - 🇸🇬SG-06
   - 🇸🇬SG-07
+  - 🇸🇬SG-08
+- name: 🇯🇵 日本
+  type: url-test
+  url: https://www.youtube.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇯🇵JP-01
+  - 🇯🇵JP-02
+  - 🇯🇵JP-03
+  - 🇯🇵JP-04
+  - 🇯🇵JP-05
+  - 🇯🇵JP-06
+  - 🇯🇵JP-07
 - name: 🇽🇽 XX
   type: url-test
   url: https://www.youtube.com/generate_204
